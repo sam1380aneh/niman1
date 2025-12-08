@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* colors */
+@theme {
+  --color-bg-color: #ffffff;
+  --color-text-color: #000000;
+  --color-primary: #cc7722;
+  --color-secondary: #fffaf0;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+}
+
+@layer components {
+  .btn {
+    @apply w-auto transition ease-out duration-700  shadow-2xl gap-3 rounded-md h-auto bg-primary px-5 py-3 flex flex-row-reverse justify-center items-center;
+  }
+}
