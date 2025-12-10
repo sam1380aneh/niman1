@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,3 +25,6 @@ function App() {
 }
 
 export default App;
+const swiper = new Swiper(".swiper", {
+  modules: [Navigation, Pagination],
+});
