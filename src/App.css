@@ -29,4 +29,7 @@
   .system-g {
     @apply flex flex-col;
   }
+  .cart-sugest {
+    @apply flex flex-row-reverse;
+  }
 }
