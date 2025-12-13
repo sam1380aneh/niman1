@@ -9,6 +9,7 @@
   --color-text-color: #000000;
   --color-primary: #cc7722;
   --color-secondary: #fffaf0;
+  --color-blurcolor: #ffffff33;
   --color-shadow: rgba(0, 0, 0, 0.4);
 }
 
@@ -16,10 +17,16 @@
   .btn {
     @apply w-auto transition ease-out duration-700  shadow-2xl gap-3 rounded-md h-auto bg-primary px-5 py-3 flex flex-row-reverse justify-center items-center;
   }
-  .carts {
-    @apply mb-50 bg-secondary mx-15 rounded-md shadow-2xl bg-amber-400 flex items-center gap-7 flex-row-reverse overflow-hidden p-5;
+  .swiper {
+    @apply w-full bg-amber-300 py-10 h-auto flex flex-row row-span-4 items-center;
   }
-  .cart-item {
-    @apply bg-bg-color p-3 rounded-sm shadow flex flex-col text-right font-sans text-[1.125rem];
+  .swiper-wrapper {
+    @apply bg-amber-200;
+  }
+  .swiper-slide {
+    @apply w-[360px] h-[460px];
+  }
+  .system-g {
+    @apply flex flex-col;
   }
 }
