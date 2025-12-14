@@ -30,6 +30,9 @@
     @apply flex flex-col;
   }
   .cart-sugest {
-    @apply flex flex-row-reverse;
+    @apply flex mx-10 my-10 flex-row justify-start items-start;
+  }
+  .cart-design {
+    @apply bg-bg-color m-10 flex flex-col text-right;
   }
 }
