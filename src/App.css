@@ -1,9 +1,7 @@
 @import "tailwindcss";
-@import "swiper/css";
-@import "swiper/css/navigation";
-@import "swiper/css/pagination";
 
 /* colors */
+/* theme */
 @theme {
   --color-bg-color: #ffffff;
   --color-text-color: #000000;
@@ -11,21 +9,195 @@
   --color-secondary: #fffaf0;
   --color-blurcolor: #ffffff33;
   --color-shadow: rgba(0, 0, 0, 0.4);
+
+  /*  FONT SIZES  */
+  --text-tiny: 0.625rem;
+  --text-tiny--line-height: 1.2;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.5;
+  --text-base: 1rem;
+  --text-base--line-height: 1.5;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 1.3;
+  --text-display: 4rem;
+  --text-display--line-height: 1.1;
+
+  /*  SPACING FOR PADDING & MARGIN */
+  --spacing: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-huge: 10rem;
+
+  /*  responsive  */
+  --breakpoint-xs: 20rem; /* 320px */
+  --breakpoint-sm: 40rem; /* 640px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 64rem; /* 1024px */
+  --breakpoint-xl: 80rem; /* 1280px */
+  --breakpoint-2xl: 96rem; /* 1536px */
+  --breakpoint-3xl: 120rem; /* 1920px */
+  --breakpoint-4xl: 160rem; /* 2560px */
+
+  /*  BORDER RADIUS  */
+  --radius-none: 0;
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /*  SHADOWS  */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+
+  /*  DROP SHADOWS  */
+  --drop-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.15);
+  --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 0.12);
+  --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
+
+  /*  BLUR  */
+  --blur-xs: 4px;
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+  --blur-2xl: 40px;
+
+  /*  ASPECT RATIOS - cards or embed */
+  --aspect-square: 1 / 1;
+  --aspect-video: 16 / 9;
+  --aspect-ultrawide: 21 / 9;
+
+  /*  EASING FUNCTIONS FOR ANIMATIONS OR TRANSITION */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
 }
 
 @layer components {
+  .same-h-w {
+    @apply top-0 w-full h-[65rem] z-0 object-cover;
+  }
+  .div-nav {
+    @apply z-10 absolute top-0 w-full px-20 py-10 flex items-center justify-between;
+  }
   .btn {
-    @apply w-auto transition ease-out duration-700  shadow-2xl gap-3 rounded-md h-auto bg-primary px-5 py-3 flex flex-row-reverse justify-center items-center;
+    @apply w-auto transition ease-out duration-700  shadow gap-3 rounded-md h-auto bg-primary px-5 py-5 flex flex-row-reverse justify-center text-center items-center text-2xl;
   }
-  .swiper {
-    @apply w-full bg-amber-300 py-10 h-auto flex flex-row row-span-4 items-center;
+  .navbar {
+    @apply flex justify-between items-center flex-row-reverse gap-15;
   }
-  .swiper-wrapper {
-    @apply bg-amber-200;
+  .nav {
+    @apply flex justify-between items-center flex-row-reverse gap-10 px-20;
   }
-  .swiper-slide {
-    @apply w-[360px] h-[460px];
+  .nav-item {
+    @apply flex flex-row items-center justify-center gap-2;
   }
+  .nav-text {
+    @apply font-bold text-2xl font-serif text-bg-color;
+  }
+  .text-container {
+    @apply absolute  h-110 flex flex-col justify-center items-center text-bg-color text-center bottom-[25rem] left-[40rem];
+  }
+  .search-box {
+    @apply flex py-20 shadow bg-bg-color h-30 w-[500rem] justify-center container mx-auto items-center border-3 border-primary rounded-2xl flex-row;
+  }
+  .searchBar-nav {
+    @apply flex w-7xl justify-between items-center flex-row-reverse gap-20;
+  }
+  .searchBar-nav-item {
+    @apply flex text-3xl font-serif font-bold flex-row justify-center items-center gap-5;
+  }
+  .cartbox-1 {
+    @apply bg-secondary px-10 py-35 rounded-3xl shadow flex flex-row-reverse gap-10 justify-center h-auto mx-20 mt-70;
+  }
+  .cartext {
+    @apply flex flex-col justify-between items-end gap-5 text-right;
+  }
+  .cart-slide {
+    @apply flex justify-center w-7xl;
+  }
+  .cart-slides {
+    @apply flex flex-row w-full justify-between items-center gap-10;
+  }
+  .carts-slide1-item {
+    @apply flex flex-col justify-center items-center;
+  }
+
+  /* swiper */
+  .swiper-css {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 140rem;
+    height: 500px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: #fffaf0;
+  }
+  .track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+    gap: 1px;
+  }
+
+  .slide {
+    scroll-snap-align: start;
+    height: 410px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 400px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  }
+  .pic-swiper-1 {
+    @apply w-full h-55 object-cover rounded-2xl p-2;
+  }
+  .heart {
+    @apply absolute top-5 left-5 rounded-sm bg-white p-2 shadow;
+  }
+  .text-icon {
+    @apply flex mb-2 flex-row text-right justify-end items-center;
+  }
+  .about-container {
+    @apply flex flex-row-reverse gap-5 my-30 mx-15 justify-center items-center h-250;
+  }
+  .text-decor {
+    @apply bg-primary text-bg-color font-bold text-2xl text-center p-10 rounded-2xl;
+  }
+  .text-decor-2 {
+    @apply w-[630px] h-[142px] rounded-2xl flex flex-row-reverse gap-1.5 justify-center items-center bg-bg-color w-4xl backdrop-blur-2xl z-50;
+  }
+  .price {
+    @apply mt-50 container text-center mx-auto text-5xl font-bold font-sans text-primary;
+  }
+  .price-pics {
+    @apply flex flex-row justify-between px-10 py-5 relative h-250;
+  }
+  .carts-dec-2 {
+    @apply w-full h-full text-right border-2 border-primary rounded-md;
+  }
+
+  /* end of swiper */
   .system-g {
     @apply flex flex-col;
   }
@@ -36,3 +208,24 @@
     @apply bg-bg-color m-10 flex flex-col text-right;
   }
 }
+
+@layer base {
+  body {
+    color: var(--color-text-color);
+  }
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+/* @utility btn {
+  
+  border-radius: 0.5rem;
+  box-shadow : 
+  padding: 0.5rem 1rem;
+  background-color: ButtonFace; */
+/* } */
