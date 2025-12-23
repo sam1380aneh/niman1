@@ -39,14 +39,15 @@ Screenshots will be added soon.
 - npm run dev
 
 ---
-👤 Author
+## 👤 Authors
 
- - samane amanollahi, front-end developer
- - ali amanollahi, ui-ux designer
- - 2025/Nov/22
-   
+- **Samane Amanollahi** — Front-End Developer  
+- **Ali Amanollahi** — UI/UX Designer  
+- 📅 Project Date: **November 22, 2025**
+
 ---
 
-📫 Let's Connect
-LinkedIn: linkedin.com/in/samaneh=amanollahi
-Email: sam1380aneh@gmail.com
+## 📫 Let’s Connect
+
+- 💼 **LinkedIn:**samaneh-amanollahi  
+- ✉️ **Email:** sam1380aneh@gmail.com
