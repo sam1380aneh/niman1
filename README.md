@@ -33,10 +33,10 @@ Screenshots will be added soon.
 ---
 ## 📂 Project Setup
 
-Clone the repository:
-git clone https://github.com/your-username/niman.git
-cd niman
-npm run dev
+- Clone the repository:
+- git clone https://github.com/your-username/niman.git
+- cd niman
+- npm run dev
 
 ---
 👤 Author
