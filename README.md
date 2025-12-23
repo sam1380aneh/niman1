@@ -26,3 +26,13 @@ This project focuses on responsive design, component-based architecture, and int
 - **Vite**
 
 ---
+##  📸 Screenshots
+
+Screenshots will be added soon.
+
+---
+👤 Author
+
+samane amanollahi
+Junior Front-End Developer
+2025/Nov/22
