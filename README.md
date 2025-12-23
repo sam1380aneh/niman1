@@ -33,6 +33,6 @@ Screenshots will be added soon.
 ---
 👤 Author
 
-samane amanollahi
-Junior Front-End Developer
-2025/Nov/22
+ - samane amanollahi
+ - Junior Front-End Developer
+ - 2025/Nov/22
