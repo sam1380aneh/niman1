@@ -41,6 +41,6 @@ Screenshots will be added soon.
 ---
 👤 Author
 
- - samane amanollahi
- - Junior Front-End Developer
+ - samane amanollahi, front-end developer
+ - ali amanollahi, ui-ux designer
  - 2025/Nov/22
