@@ -6,370 +6,124 @@
     <title>niman</title>
   </head>
   <body>
-    <header class="relative">
+    <header>
       <!-- header pic and shadow -->
       <div>
         <img
-          src="src/assets/img/main.jpg"
+          src="src/assets/img/imgs/main.jpg"
           alt="main niman"
           class="same-h-w relative"
         />
-        <span class="same-h-w absolute bg-shadow"></span>
+        <span class="same-h-w absolute bg-black/50"></span>
       </div>
       <!-- navbar  -->
       <div class="div-nav">
         <!-- log-sign btn -->
-        <div class="btn">
-          <span class="flex gap-2 font-serif font-bold">
-            <a href="#">ورود </a>
-            <svg
-              width="35"
-              height="35"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.5 30H6C5.175 30 4.5 29.325 4.5 28.5V7.5C4.5 6.675 5.175 6 6 6H16.5"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M31.5 18H14.25"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M19.5 23.25L14.25 18L19.5 12.75"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
-          <p class="text-bg-color">|</p>
-          <span>
-            <a href="#">ثبت نام </a>
-          </span>
-        </div>
+        <button class="btn">
+          <img src="src/assets/img/svg/line-md_login.svg" />
+          <a href="#"> ورود </a>
+          <p class="text-bg-color/50">|</p>
+          <a href="#">ثبت نام </a>
+        </button>
         <!-- main nav -->
-        <div name="navbar" class="navbar">
-          <img src="src/assets/img/logo.png" alt="logo" class="w-30 h-30" />
+        <div class="navbar">
           <ul class="nav">
             <li class="nav-item">
-              <a href="#">خانه </a>
-              <svg
-                width="50"
-                height="50"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M25 35V21.6667C25 21.2246 24.8244 20.8007 24.5118 20.4882C24.1993 20.1756 23.7754 20 23.3333 20H16.6667C16.2246 20 15.8007 20.1756 15.4882 20.4882C15.1756 20.8007 15 21.2246 15 21.6667V35"
-                  stroke="#CC7722"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M5 16.6667C4.99988 16.1818 5.10556 15.7027 5.30965 15.2628C5.51374 14.823 5.81133 14.433 6.18167 14.12L17.8483 4.11999C18.45 3.6115 19.2123 3.33252 20 3.33252C20.7877 3.33252 21.55 3.6115 22.1517 4.11999L33.8183 14.12C34.1887 14.433 34.4863 14.823 34.6904 15.2628C34.8944 15.7027 35.0001 16.1818 35 16.6667V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H8.33333C7.44928 35 6.60143 34.6488 5.97631 34.0237C5.35119 33.3986 5 32.5507 5 31.6667V16.6667Z"
-                  stroke="#CC7722"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              خانه
+              <img src="src/assets/img/svg/lucide_home.svg" />
             </li>
             <li class="nav-item">
-              <a href="#">ویلا ها</a>
-              <svg
-                width="50"
-                height="50"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  opacity="0.3"
-                  d="M8.33398 15.6166L23.334 9.84998V20H15.0007V31.6666H8.33398V15.6166ZM31.6673 31.6666H26.6673V26.6666H23.334V31.6666H18.334V23.3333H31.6673V31.6666Z"
-                  fill="#CC7722"
-                />
-                <path
-                  d="M31.6667 16.6667C29.8333 16.6667 28.3333 18.1667 28.3333 20H26.6667V5L5 13.3333V35H35V20C35 18.1667 33.5 16.6667 31.6667 16.6667ZM8.33333 15.6167L23.3333 9.85V20H15V31.6667H8.33333V15.6167ZM31.6667 31.6667H26.6667V26.6667H23.3333V31.6667H18.3333V23.3333H31.6667V31.6667Z"
-                  fill="#CC7722"
-                />
-              </svg>
+              ویلا ها
+              <img src="src/assets/img/svg/ic_twotone-villa.svg" />
             </li>
             <li class="nav-item">
-              <a href="#">درباره ما</a>
-              <svg
-                width="50"
-                height="50"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.3125 17.1875H20.3125V30.625"
-                  stroke="#CC7722"
-                  stroke-width="1.25"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14.6094 30.9375H25.3906"
-                  stroke="#CC7722"
-                  stroke-width="1.25"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M20 12.5C19.5055 12.5 19.0222 12.3534 18.6111 12.0787C18.2 11.804 17.8795 11.4135 17.6903 10.9567C17.5011 10.4999 17.4516 9.99723 17.548 9.51228C17.6445 9.02732 17.8826 8.58187 18.2322 8.23223C18.5819 7.8826 19.0273 7.6445 19.5123 7.54804C19.9972 7.45157 20.4999 7.50108 20.9567 7.6903C21.4135 7.87952 21.804 8.19995 22.0787 8.61108C22.3534 9.0222 22.5 9.50555 22.5 10C22.5 10.663 22.2366 11.2989 21.7678 11.7678C21.2989 12.2366 20.663 12.5 20 12.5Z"
-                  fill="#CC7722"
-                />
-              </svg>
+              درباره ما
+              <img src="src/assets/img/svg/famicons_information.svg" />
             </li>
             <li class="nav-item">
-              <a href="#">تماس با ما</a>
-              <svg
-                width="50"
-                height="50"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M13.6203 26.3817C20.0287 32.79 25.967 33.4917 27.7103 33.5567C29.817 33.6333 31.967 31.9133 32.897 30.1517C31.4137 28.4117 29.482 27.0617 27.367 25.5983C26.1187 26.845 24.5803 29.1617 22.532 28.3317C21.367 27.8633 18.4903 26.5383 15.977 24.0233C13.4637 21.5083 12.1387 18.6333 11.667 17.47C10.837 15.4183 13.1603 13.8767 14.4087 12.6283C12.9453 10.4783 11.6187 8.49666 9.88199 7.08833C8.09532 8.02166 6.36532 10.155 6.44366 12.29C6.50866 14.0333 7.21033 19.9717 13.6203 26.3817ZM27.587 36.8883C25.187 36.8 18.3853 35.86 11.262 28.7383C4.14033 21.615 3.20199 14.815 3.11199 12.4133C2.97866 8.75333 5.78199 5.19833 9.02033 3.80999C9.41029 3.6416 9.83733 3.57749 10.2595 3.62395C10.6818 3.67041 11.0846 3.82584 11.4287 4.07499C14.1087 6.02999 15.957 8.99166 17.5453 11.3117C17.8757 11.7941 18.0271 12.3768 17.9732 12.9591C17.9194 13.5413 17.6636 14.0864 17.2503 14.5L14.9903 16.7617C15.5153 17.92 16.5837 19.9167 18.3337 21.6667C20.0837 23.4167 22.0803 24.485 23.2403 25.01L25.4987 22.75C25.9133 22.3349 26.4608 22.0789 27.0452 22.0268C27.6296 21.9747 28.2137 22.1298 28.6953 22.465C31.062 24.105 33.842 25.9267 35.8687 28.5217C36.138 28.8682 36.3094 29.2807 36.3648 29.7161C36.4202 30.1514 36.3577 30.5937 36.1837 30.9967C34.7887 34.2517 31.2587 37.0233 27.587 36.8883Z"
-                  fill="#CC7722"
-                />
-              </svg>
+              تماس با ما
+              <img src="src/assets/img/svg/mingcute_phone-line.svg" />
             </li>
           </ul>
         </div>
+        <!-- logo img -->
+        <img src="src/assets/img/imgs/logo.png" alt="logo" class="w-30 h-30" />
       </div>
       <!-- header text & main -->
       <div class="text-container">
-        <h2 class="pb-5 text-center">
+        <h1 class="text-center">
           اجاره ویلا و اقامتگاه در سراسر ایران <br />
           بهترین ویلاهای ساحلی، جنگلی و لوکس را با قیمت مناسب
-        </h2>
-        <button class="btn mt-5">
+        </h1>
+        <button class="btn">
           <a>مشاهده ویلاها</a>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 10 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.73716 18.4492L2.05252 10.6412C1.88398 10.4708 1.78945 10.2409 1.78945 10.0012C1.78945 9.7616 1.88398 9.53163 2.05252 9.36127L9.73549 1.55164C9.90394 1.38022 9.99833 1.1495 9.99833 0.909169C9.99833 0.668836 9.90394 0.438117 9.73549 0.266699C9.6532 0.182289 9.55485 0.115206 9.44622 0.0694016C9.3376 0.0235975 9.22091 0 9.10302 0C8.98514 0 8.86844 0.0235975 8.75982 0.0694016C8.6512 0.115206 8.55284 0.182289 8.47055 0.266699L0.787581 8.073C0.282728 8.58718 -0.000123024 9.27898 -0.000123024 9.99957C-0.000123024 10.7202 0.282728 11.412 0.787581 11.9261L8.47055 19.7324C8.55287 19.8171 8.65133 19.8844 8.7601 19.9304C8.86888 19.9763 8.98577 20 9.10385 20C9.22194 20 9.33883 19.9763 9.44761 19.9304C9.55638 19.8844 9.65484 19.8171 9.73716 19.7324C9.90561 19.561 10 19.3303 10 19.09C10 18.8496 9.90561 18.6189 9.73716 18.4475"
-              fill="white"
-            />
-          </svg>
+          <img src="src/assets/img/svg/Vector.svg" alt="" />
         </button>
       </div>
       <!-- serach box -->
-      <div class="w-full h-20 z-0 relative">
-        <div class="search-box absolute bottom-2 left-50">
-          <ul class="searchBar-nav">
-            <li class="searchBar-nav-item">
-              <a href="#" class="text-text-color">مقصد </a>
-              <svg
-                width="50"
-                height="50"
-                viewBox="0 0 42 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 49L7.66667 35.7331C4.64761 33.0463 2.51961 29.5106 1.56426 25.594C0.608912 21.6774 0.871249 17.5644 2.31656 13.7994C3.76187 10.0344 6.32202 6.79482 9.65824 4.50928C12.9945 2.22374 16.9495 1 21 1C25.0505 1 29.0055 2.22374 32.3418 4.50928C35.678 6.79482 38.2381 10.0344 39.6834 13.7994C41.1288 17.5644 41.3911 21.6774 40.4357 25.594C39.4804 29.5106 37.3524 33.0463 34.3333 35.7331L21 49Z"
-                  stroke="#CC7722"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </li>
-            <svg
-              width="5"
-              height="100"
-              viewBox="0 0 1 70"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line x1="0.5" x2="0.5" y2="70" stroke="#CC7722" />
-            </svg>
-            <li class="searchBar-nav-item">
-              <a href="#" class="text-text-color">تاریخ </a>
-              <svg
-                width="42"
-                height="46"
-                viewBox="0 0 42 46"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M29.6389 0.75V9.63888M11.8611 0.75V9.63888M40.75 22.9722C40.75 14.5922 40.75 10.4011 38.1456 7.79888C35.5411 5.19666 31.3522 5.19444 22.9722 5.19444H18.5278C10.1478 5.19444 5.95667 5.19444 3.35444 7.79888C0.752222 10.4033 0.75 14.5922 0.75 22.9722V27.4166C0.75 35.7966 0.75 39.9877 3.35444 42.59C5.95889 45.1922 10.1478 45.1944 18.5278 45.1944M0.75 18.5278H40.75"
-                  stroke="#CC7722"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34.6771 37.8633L31.8615 36.3055V32.4544M40.7504 36.3055C40.7504 38.663 39.8139 40.9239 38.1469 42.5909C36.4799 44.2579 34.219 45.1944 31.8615 45.1944C29.5041 45.1944 27.2431 44.2579 25.5762 42.5909C23.9092 40.9239 22.9727 38.663 22.9727 36.3055C22.9727 33.948 23.9092 31.6871 25.5762 30.0201C27.2431 28.3531 29.5041 27.4166 31.8615 27.4166C34.219 27.4166 36.4799 28.3531 38.1469 30.0201C39.8139 31.6871 40.7504 33.948 40.7504 36.3055Z"
-                  stroke="#CC7722"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </li>
-            <svg
-              width="5"
-              height="100"
-              viewBox="0 0 1 70"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line x1="0.5" x2="0.5" y2="70" stroke="#CC7722" />
-            </svg>
-            <li class="searchBar-nav-item">
-              <a href="#" class="text-text-color">تعداد نفرات</a>
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_625_3376)">
-                  <path
-                    d="M37.5 35C37.5 35 40 35 40 32.5C40 30 37.5 22.5 27.5 22.5C17.5 22.5 15 30 15 32.5C15 35 17.5 35 17.5 35H37.5ZM17.555 32.5L17.5 32.49C17.5025 31.83 17.9175 29.915 19.4 28.19C20.78 26.5725 23.205 25 27.5 25C31.7925 25 34.2175 26.575 35.6 28.19C37.0825 29.915 37.495 31.8325 37.5 32.49L37.48 32.495L37.445 32.5H17.555ZM27.5 17.5C28.8261 17.5 30.0979 16.9732 31.0355 16.0355C31.9732 15.0979 32.5 13.8261 32.5 12.5C32.5 11.1739 31.9732 9.90215 31.0355 8.96447C30.0979 8.02678 28.8261 7.5 27.5 7.5C26.1739 7.5 24.9021 8.02678 23.9645 8.96447C23.0268 9.90215 22.5 11.1739 22.5 12.5C22.5 13.8261 23.0268 15.0979 23.9645 16.0355C24.9021 16.9732 26.1739 17.5 27.5 17.5ZM35 12.5C35 13.4849 34.806 14.4602 34.4291 15.3701C34.0522 16.2801 33.4997 17.1069 32.8033 17.8033C32.1069 18.4997 31.2801 19.0522 30.3701 19.4291C29.4602 19.806 28.4849 20 27.5 20C26.5151 20 25.5398 19.806 24.6299 19.4291C23.7199 19.0522 22.8931 18.4997 22.1967 17.8033C21.5003 17.1069 20.9478 16.2801 20.5709 15.3701C20.194 14.4602 20 13.4849 20 12.5C20 10.5109 20.7902 8.60322 22.1967 7.1967C23.6032 5.79018 25.5109 5 27.5 5C29.4891 5 31.3968 5.79018 32.8033 7.1967C34.2098 8.60322 35 10.5109 35 12.5ZM17.34 23.2C16.3394 22.8873 15.3088 22.6803 14.265 22.5825C13.6784 22.5253 13.0893 22.4978 12.5 22.5C2.5 22.5 0 30 0 32.5C0 34.1667 0.833333 35 2.5 35H13.04C12.6696 34.2195 12.4847 33.3638 12.5 32.5C12.5 29.975 13.4425 27.395 15.225 25.24C15.8325 24.505 16.54 23.8175 17.34 23.2ZM12.3 25C10.8213 27.2236 10.0221 29.8297 10 32.5H2.5C2.5 31.85 2.91 29.925 4.4 28.19C5.7625 26.6 8.13 25.05 12.3 25.0025V25ZM3.75 13.75C3.75 11.7609 4.54018 9.85322 5.9467 8.4467C7.35322 7.04018 9.26088 6.25 11.25 6.25C13.2391 6.25 15.1468 7.04018 16.5533 8.4467C17.9598 9.85322 18.75 11.7609 18.75 13.75C18.75 15.7391 17.9598 17.6468 16.5533 19.0533C15.1468 20.4598 13.2391 21.25 11.25 21.25C9.26088 21.25 7.35322 20.4598 5.9467 19.0533C4.54018 17.6468 3.75 15.7391 3.75 13.75ZM11.25 8.75C9.92392 8.75 8.65215 9.27678 7.71447 10.2145C6.77678 11.1521 6.25 12.4239 6.25 13.75C6.25 15.0761 6.77678 16.3479 7.71447 17.2855C8.65215 18.2232 9.92392 18.75 11.25 18.75C12.5761 18.75 13.8479 18.2232 14.7855 17.2855C15.7232 16.3479 16.25 15.0761 16.25 13.75C16.25 12.4239 15.7232 11.1521 14.7855 10.2145C13.8479 9.27678 12.5761 8.75 11.25 8.75Z"
-                    fill="#CC7722"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_625_3376">
-                    <rect width="40" height="40" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </li>
-            <svg
-              width="5"
-              height="100"
-              viewBox="0 0 1 70"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line x1="0.5" x2="0.5" y2="70" stroke="#CC7722" />
-            </svg>
-            <li class="searchBar-nav-item">
-              <button class="btn rounded-2xl p-6">
-                <svg
-                  width="40"
-                  height="40"
-                  viewBox="0 0 34 34"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15.1667 29.3333C22.9908 29.3333 29.3333 22.9908 29.3333 15.1667C29.3333 7.3425 22.9908 1 15.1667 1C7.3425 1 1 7.3425 1 15.1667C1 22.9908 7.3425 29.3333 15.1667 29.3333Z"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.8815 9.61917C19.2629 8.99938 18.5281 8.50785 17.7191 8.17278C16.9101 7.83772 16.0429 7.66572 15.1673 7.66667C14.2917 7.66572 13.4245 7.83772 12.6155 8.17278C11.8065 8.50785 11.0717 8.99938 10.4531 9.61917M25.3523 25.3517L32.4231 32.4225"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </div>
+      <div class="search-box absolute bottom-2 left-50">
+        <ul class="searchBar-nav">
+          <li class="searchBar-nav-item">
+            <h5 href="#" class="text-text-color">مقصد</h5>
+            <img src="src/assets/img/svg/Vector (1).svg" />
+          </li>
+          <img src="src/assets/img/svg/Line 4.svg" />
+          <li class="searchBar-nav-item">
+            <h5 href="#" class="text-text-color">تاریخ</h5>
+            <img src="src/assets/img/svg/Group.svg" />
+          </li>
+          <img src="src/assets/img/svg/Line 4.svg" />
+          <li class="searchBar-nav-item">
+            <h5 href="#" class="text-text-color">تعداد نفرات</h5>
+            <img src="src/assets/img/svg/bi_people.svg" />
+          </li>
+          <img src="src/assets/img/svg/Line 4.svg" />
+          <li class="searchBar-nav-item">
+            <button class="btn rounded-2xl p-6">
+              <img src="src/assets/img/svg/Group (1).svg" />
+            </button>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <!-- carts box 1 -->
-      <div class="w-full h-200">
+      <div class="Separator"></div>
+      <!-- cartbox-1 -->
+      <div>
         <div class="cartbox-1">
           <div class="cartext">
-            <h4 class="text-primary">در نیمان <br />انتخاب مقصد و نوع اقامت</h4>
-            <p class="pt-2">
+            <h3 class="pb-10">در نیمان <br />انتخاب مقصد و نوع اقامت</h3>
+            <p>
               بهترین اقامتگاه را انتخاب کنید و یک سفر راحت، امن و خوش‌قیمت داشته
               باشید
             </p>
-            <button class="btn mt-5">
-              <p class="text-bg-color">مشاهده ویلاها</p>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 10 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.73716 18.4492L2.05252 10.6412C1.88398 10.4708 1.78945 10.2409 1.78945 10.0012C1.78945 9.7616 1.88398 9.53163 2.05252 9.36127L9.73549 1.55164C9.90394 1.38022 9.99833 1.1495 9.99833 0.909169C9.99833 0.668836 9.90394 0.438117 9.73549 0.266699C9.6532 0.182289 9.55485 0.115206 9.44622 0.0694016C9.3376 0.0235975 9.22091 0 9.10302 0C8.98514 0 8.86844 0.0235975 8.75982 0.0694016C8.6512 0.115206 8.55284 0.182289 8.47055 0.266699L0.787581 8.073C0.282728 8.58718 -0.000123024 9.27898 -0.000123024 9.99957C-0.000123024 10.7202 0.282728 11.412 0.787581 11.9261L8.47055 19.7324C8.55287 19.8171 8.65133 19.8844 8.7601 19.9304C8.86888 19.9763 8.98577 20 9.10385 20C9.22194 20 9.33883 19.9763 9.44761 19.9304C9.55638 19.8844 9.65484 19.8171 9.73716 19.7324C9.90561 19.561 10 19.3303 10 19.09C10 18.8496 9.90561 18.6189 9.73716 18.4475"
-                  fill="white"
-                />
-              </svg>
+            <button class="btn">
+              <a href="#">مشاهده ویلاها</a>
+              <img src="src/assets/img/svg/Vector.svg" alt="" />
             </button>
           </div>
           <div class="cart-slide">
             <div class="flex flex-row justify-center">
               <ul class="cart-slides">
                 <li class="carts-slide1-item">
-                  <img
-                    src="src/assets/img/cart2.png"
-                    alt="cart-1"
-                    class="w-57.5 h-62.5"
-                  />
-                  <p class="pt-2">استخر دار</p>
+                  <img src="src/assets/img/imgs/cart2.png" />
+                  <h5 class="pt-2">استخر دار</h5>
                 </li>
                 <li class="carts-slide1-item">
-                  <img
-                    src="src/assets/img/cart3.png"
-                    alt="cart-1"
-                    class="w-57.5 h-62.5"
-                  />
-                  <p class="pt-2">بومگردی</p>
+                  <img src="src/assets/img/imgs/cart3.png" />
+                  <h5 class="pt-2">بومگردی</h5>
                 </li>
                 <li class="carts-slide1-item">
-                  <img
-                    src="src/assets/img/cart4.png"
-                    alt="cart-1"
-                    class="w-57.5 h-62.5"
-                  />
-                  <p class="pt-2">فروش ویلا</p>
+                  <img src="src/assets/img/imgs/cart4.png" />
+                  <h5 class="pt-2">فروش ویلا</h5>
                 </li>
                 <li class="carts-slide1-item">
-                  <img
-                    src="src/assets/img/cart5.png"
-                    alt="cart-1"
-                    class="w-57.5 h-62.5"
-                  />
-                  <p class="pt-2">ویلا های اقتصادی</p>
+                  <img src="src/assets/img/imgs/cart5.png" />
+                  <h5 class="pt-2">ویلا های اقتصادی</h5>
                 </li>
                 <li class="carts-slide1-item">
-                  <img
-                    src="src/assets/img/cart2.png"
-                    alt=""
-                    class="w-57.5 h-62.5"
-                  />
-                  <p class="pt-2">اجاره ماهانه</p>
+                  <img src="src/assets/img/imgs/cart5.png" />
+                  <h5 class="pt-2">اجاره ماهانه</h5>
                 </li>
               </ul>
             </div>
@@ -378,1074 +132,443 @@
       </div>
       <!-- end of carts box 1 -->
 
+      <div class="Separator"></div>
+
       <!-- start swiper 1 -->
       <div>
-        <div class="flex flex-row-reverse justify-between w-full px-20 py-10">
-          <h4>ویلا های استخردار</h4>
+        <div class="container-text">
+          <h3 class="text-text-color">ویلا های استخردار</h3>
           <button class="btn">
             <a>مشاهده همه</a>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 10 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.73716 18.4492L2.05252 10.6412C1.88398 10.4708 1.78945 10.2409 1.78945 10.0012C1.78945 9.7616 1.88398 9.53163 2.05252 9.36127L9.73549 1.55164C9.90394 1.38022 9.99833 1.1495 9.99833 0.909169C9.99833 0.668836 9.90394 0.438117 9.73549 0.266699C9.6532 0.182289 9.55485 0.115206 9.44622 0.0694016C9.3376 0.0235975 9.22091 0 9.10302 0C8.98514 0 8.86844 0.0235975 8.75982 0.0694016C8.6512 0.115206 8.55284 0.182289 8.47055 0.266699L0.787581 8.073C0.282728 8.58718 -0.000123024 9.27898 -0.000123024 9.99957C-0.000123024 10.7202 0.282728 11.412 0.787581 11.9261L8.47055 19.7324C8.55287 19.8171 8.65133 19.8844 8.7601 19.9304C8.86888 19.9763 8.98577 20 9.10385 20C9.22194 20 9.33883 19.9763 9.44761 19.9304C9.55638 19.8844 9.65484 19.8171 9.73716 19.7324C9.90561 19.561 10 19.3303 10 19.09C10 18.8496 9.90561 18.6189 9.73716 18.4475"
-                fill="white"
-              />
-            </svg>
+            <img src="src/assets/img/svg/Vector.svg" />
           </button>
         </div>
       </div>
       <div class="swiper-css">
         <div class="track">
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper12.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper11.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>واحد ویلایی استخردار</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper11.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper12.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>واحد ویلایی استخردار</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper14.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper13.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>واحد ویلایی استخردار</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper13.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper14.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>واحد ویلایی استخردار</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper12.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper12.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>واحد ویلایی استخردار</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper14.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper14.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>واحد ویلایی استخردار</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- end of swiper 1 -->
+
+      <div class="Separator"></div>
+
       <!-- start swiper 2 -->
       <div>
-        <div
-          class="flex flex-row-reverse justify-between w-full px-20 pt-60 mb-10"
-        >
-          <h4>اقامتگاه های بومگردی</h4>
+        <div class="container-text">
+          <h3 class="text-text-color">اقامتگاه های بومگردی</h3>
           <button class="btn">
             <a>مشاهده همه</a>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 10 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.73716 18.4492L2.05252 10.6412C1.88398 10.4708 1.78945 10.2409 1.78945 10.0012C1.78945 9.7616 1.88398 9.53163 2.05252 9.36127L9.73549 1.55164C9.90394 1.38022 9.99833 1.1495 9.99833 0.909169C9.99833 0.668836 9.90394 0.438117 9.73549 0.266699C9.6532 0.182289 9.55485 0.115206 9.44622 0.0694016C9.3376 0.0235975 9.22091 0 9.10302 0C8.98514 0 8.86844 0.0235975 8.75982 0.0694016C8.6512 0.115206 8.55284 0.182289 8.47055 0.266699L0.787581 8.073C0.282728 8.58718 -0.000123024 9.27898 -0.000123024 9.99957C-0.000123024 10.7202 0.282728 11.412 0.787581 11.9261L8.47055 19.7324C8.55287 19.8171 8.65133 19.8844 8.7601 19.9304C8.86888 19.9763 8.98577 20 9.10385 20C9.22194 20 9.33883 19.9763 9.44761 19.9304C9.55638 19.8844 9.65484 19.8171 9.73716 19.7324C9.90561 19.561 10 19.3303 10 19.09C10 18.8496 9.90561 18.6189 9.73716 18.4475"
-                fill="white"
-              />
-            </svg>
+            <img src="src/assets/img/svg/Vector.svg" />
           </button>
         </div>
       </div>
       <div class="swiper-css">
         <div class="track">
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper21.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper21.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>اقامتگاه بوم گردی</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper22.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper22.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>اقامتگاه بوم گردی</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper23.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper23.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>اقامتگاه بوم گردی</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper24.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper24.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>اقامتگاه بوم گردی</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper21.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper23.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>اقامتگاه بوم گردی</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="w-full h-full text-right">
+            <div>
               <!-- Image -->
-              <div class="relative rounded-md">
-                <img src="src/assets/img/swiper23.png" class="pic-swiper-1" />
+              <div class="relative">
+                <img
+                  src="src/assets/img/imgs/swiper24.png"
+                  class="pic-swiper-1"
+                />
                 <button class="heart">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="30" height="30" rx="2" fill="white" />
-                    <path
-                      d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <img src="src/assets/img/svg/tabler_heart.svg" />
                 </button>
               </div>
               <!-- Content -->
-              <div class="p-3">
-                <p>واحد ویلایی استخردار</p>
-                <div class="text-icon gap-1">
-                  <h5 class="text-gray-500">لورم ایپسوم متن ساختگی با تولید</h5>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                      fill="#CC7722"
-                    />
-                  </svg>
-                </div>
-                <div class="text-icon gap-3">
-                  <h5 class="text-gray-500">کرج , کردان</h5>
-                  <svg
-                    width="20"
-                    height="24"
-                    viewBox="0 0 20 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                      stroke="#CC7722"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-row-reverse items-center px-3 gap-5">
-                  <span class="text-sm font-bold text-gray-800">
-                    <h5>2٬250٬000 تومان/ هرشب</h5>
-                  </span>
+              <div class="px-3 mx-2 mt-3">
+                <h5>اقامتگاه بوم گردی</h5>
+                <span class="text-icon gap-1">
+                  <p class="text-text-gray">لورم ایپسوم متن ساختگی با تولید</p>
+                  <img
+                    src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                  />
+                </span>
+                <span class="text-icon gap-3">
+                  <p class="text-text-gray">کرج , کردان</p>
+                  <img src="src/assets/img/svg/Vector (2).svg" />
+                </span>
+                <span class="flex flex-row-reverse items-center gap-5">
+                  <p class="text-text-gray">2٬250٬000 تومان/ هرشب</p>
                   <button class="btn mr-30">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 35 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/Vector (3).svg" />
                   </button>
-                </div>
+                </span>
               </div>
             </div>
           </div>
@@ -1453,32 +576,34 @@
       </div>
       <!-- end of swiper 2 -->
 
+      <div class="Separator"></div>
+
       <!-- about niman -->
       <div class="about-container">
-        <div class="flex flex-col gap-2 relative h-160">
+        <div class="flex flex-col gap-5 pr-20">
           <div class="text-decor">
-            <p class="text-bg-color">جایی که کیفیت اقامت معنا پیدا می‌کند</p>
+            <h5 class="text-bg-color text-center">
+              جایی که کیفیت اقامت معنا پیدا می‌کند
+            </h5>
           </div>
-          <div class="rounded-2xl">
+          <div>
             <img
-              src="public/image copy 4.png"
-              class="w-full h-85 object-cover rounded-3xl"
+              src="src/assets/img/imgs/346e369a2af56a5e4584b33893c0434e2bec9e5d.jpg"
+              class="w-full h-80 object-cover rounded-lg"
             />
           </div>
-          <div class="text-decor-2">
-            <img src="src/assets/img/logo.png" class="pt-5 w-30 h-30" />
-            <p>نیـمان؛ انتخابی مطمئن برای اقامت در ایران</p>
-          </div>
         </div>
-        <div class="ml-10 z-0">
-          <img
-            src="public/image copy 6.png"
-            class="w-117 h-160.75 rounded-2xl"
-          />
+        <div class="text-decor-2">
+          <img src="src/assets/img/imgs/Vector.png" />
+          <h5 class="pt-3">نیـمان؛ انتخابی مطمئن برای اقامت در ایران</h5>
         </div>
-        <div class="flex flex-col gap-3 w-3xl">
-          <h3 class="text-primary pt-30 pb-5">درباره نیــمان</h3>
-          <p>
+        <img
+          src="src/assets/img/imgs/0188f2e78e874a6d9d6262fe1f6f0325a5da56cd.jpg"
+          class="w-150 h-[650px] z-0 rounded-sm absolute right-165"
+        />
+        <div class="flex flex-col gap-3 w-5xl pl-30 py-40">
+          <h3 class="text-primary">درباره نیــمان</h3>
+          <h5 class="font-light">
             «نیـمان از یک ایده ساده شروع شد: اینکه سفر باید لذت‌بخش، امن و بدون
             دردسر باشد. ما اینجا هستیم تا کمک کنیم هر مسافر، اقامتگاهی پیدا کند
             که با روحیه، نیاز ولحظه‌های سفرش هماهنگ باشد. از ساحل‌های آرام جنوب
@@ -1488,370 +613,179 @@
             تا با چند کلیک، بهترین گزینه را پیدا کنند. امروز نیـمان با صدها
             اقامتگاه معتبر در سراسر کشور و پشتیبانی شبانه‌روزی، همراه مطمئن سفر
             شماست.»
-          </p>
+          </h5>
         </div>
       </div>
       <!-- end of about niman -->
+      <div class="Separator"></div>
 
       <!-- price -->
-      <div class="price">
-        <h1 class="text-primary text-center">قیمت رقابتی</h1>
-        <h1 class="text-primary text-center">
-          اقامتگاه‌های خوش‌قیمت نیمان اینجاست!
-        </h1>
-      </div>
+      <h2 class="text-center">قیمت رقابتی</h2>
+      <h2 class="text-center">اقامتگاه‌های خوش‌قیمت نیمان اینجاست!</h2>
       <div class="price-pics">
         <div class="flex flex-row justify-between px-10 py-5 static">
-          <img src="public/image copy 5.png" class="w-400 h-125" />
-          <img src="public/image copy 7.png" class="w-400 h-125" />
+          <img src="src/assets/img/imgs/Vector 11.png" class="w-400 h-125" />
+          <img src="src/assets/img/imgs/Vector 10.png" class="w-400 h-125" />
         </div>
         <div class="absolute container left-60 top-80">
           <div class="flex flex-row justify-center gap-5 items-center">
-            <div class="slide">
-              <div class="carts-dec-2">
+            <div class="slide border-2 border-primary shadow-2xl">
+              <div>
                 <!-- Image -->
-                <div class="relative rounded-md">
-                  <img src="src/assets/img/swiper21.png" class="pic-swiper-1" />
+                <div class="relative">
+                  <img
+                    src="src/assets/img/imgs/f07539254aae0e3c843abedbdd8b5c8b9444c638.jpg"
+                    class="pic-swiper-1"
+                  />
                   <button class="heart">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect width="30" height="30" rx="2" fill="white" />
-                      <path
-                        d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/tabler_heart.svg" />
                   </button>
                 </div>
                 <!-- Content -->
-                <div class="p-3">
-                  <p>واحد ویلایی استخردار</p>
-                  <div class="text-icon gap-1">
-                    <h5 class="text-gray-500">
+                <div class="px-3 mx-2 mt-3">
+                  <h5>اقامتگاه بوم گردی</h5>
+                  <span class="text-icon gap-1">
+                    <p class="text-text-gray">
                       لورم ایپسوم متن ساختگی با تولید
-                    </h5>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                        fill="#CC7722"
-                      />
-                    </svg>
-                  </div>
-                  <div class="text-icon gap-3">
-                    <h5 class="text-gray-500">کرج , کردان</h5>
-                    <svg
-                      width="20"
-                      height="24"
-                      viewBox="0 0 20 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                        stroke="#CC7722"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <div class="flex flex-row-reverse items-center px-3 gap-5">
-                    <span class="text-sm font-bold text-gray-800">
-                      <h5>2٬250٬000 تومان/ هرشب</h5>
-                    </span>
+                    </p>
+                    <img
+                      src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                    />
+                  </span>
+                  <span class="text-icon gap-3">
+                    <p class="text-text-gray">کرج , کردان</p>
+                    <img src="src/assets/img/svg/Vector (2).svg" />
+                  </span>
+                  <span class="flex flex-row-reverse items-center">
+                    <p class="text-text-gray w-60">
+                      <del> 2٬250٬000 تومان/ هرشب </del>
+                      2٬250٬000 تومان/ هرشب
+                      <br />
+                    </p>
                     <button class="btn mr-30">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 35 26"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                      <img src="src/assets/img/svg/Vector (3).svg" />
                     </button>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="slide">
-              <div class="carts-dec-2">
+            <div class="slide border-2 border-primary shadow-2xl">
+              <div>
                 <!-- Image -->
-                <div class="relative rounded-md">
-                  <img src="src/assets/img/swiper21.png" class="pic-swiper-1" />
+                <div class="relative">
+                  <img
+                    src="src/assets/img/imgs/12d827eb1bb8c6cc7720dc555c083358300c215e.jpg"
+                    class="pic-swiper-1"
+                  />
                   <button class="heart">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect width="30" height="30" rx="2" fill="white" />
-                      <path
-                        d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/tabler_heart.svg" />
                   </button>
                 </div>
                 <!-- Content -->
-                <div class="p-3">
-                  <p>واحد ویلایی استخردار</p>
-                  <div class="text-icon gap-1">
-                    <h5 class="text-gray-500">
+                <div class="px-3 mx-2 mt-3">
+                  <h5>اقامتگاه بوم گردی</h5>
+                  <span class="text-icon gap-1">
+                    <p class="text-text-gray">
                       لورم ایپسوم متن ساختگی با تولید
-                    </h5>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                        fill="#CC7722"
-                      />
-                    </svg>
-                  </div>
-                  <div class="text-icon gap-3">
-                    <h5 class="text-gray-500">کرج , کردان</h5>
-                    <svg
-                      width="20"
-                      height="24"
-                      viewBox="0 0 20 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                        stroke="#CC7722"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <div class="flex flex-row-reverse items-center px-3 gap-5">
-                    <span class="text-sm font-bold text-gray-800">
-                      <h5>2٬250٬000 تومان/ هرشب</h5>
-                    </span>
+                    </p>
+                    <img
+                      src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                    />
+                  </span>
+                  <span class="text-icon gap-3">
+                    <p class="text-text-gray">کرج , کردان</p>
+                    <img src="src/assets/img/svg/Vector (2).svg" />
+                  </span>
+                  <span class="flex flex-row-reverse items-center">
+                    <p class="text-text-gray w-60">
+                      <del> 2٬250٬000 تومان/ هرشب </del>
+                      2٬250٬000 تومان/ هرشب
+                      <br />
+                    </p>
                     <button class="btn mr-30">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 35 26"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                      <img src="src/assets/img/svg/Vector (3).svg" />
                     </button>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="slide">
-              <div class="carts-dec-2">
+            <div class="slide border-2 border-primary shadow-2xl">
+              <div>
                 <!-- Image -->
-                <div class="relative rounded-md">
-                  <img src="src/assets/img/swiper21.png" class="pic-swiper-1" />
+                <div class="relative">
+                  <img
+                    src="src/assets/img/imgs/6c7697faf8ffe450ce626a202a7f5bbbe2b7024d.jpg"
+                    class="pic-swiper-1"
+                  />
                   <button class="heart">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect width="30" height="30" rx="2" fill="white" />
-                      <path
-                        d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/tabler_heart.svg" />
                   </button>
                 </div>
                 <!-- Content -->
-                <div class="p-3">
-                  <p>واحد ویلایی استخردار</p>
-                  <div class="text-icon gap-1">
-                    <h5 class="text-gray-500">
+                <div class="px-3 mx-2 mt-3">
+                  <h5>اقامتگاه بوم گردی</h5>
+                  <span class="text-icon gap-1">
+                    <p class="text-text-gray">
                       لورم ایپسوم متن ساختگی با تولید
-                    </h5>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                        fill="#CC7722"
-                      />
-                    </svg>
-                  </div>
-                  <div class="text-icon gap-3">
-                    <h5 class="text-gray-500">کرج , کردان</h5>
-                    <svg
-                      width="20"
-                      height="24"
-                      viewBox="0 0 20 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                        stroke="#CC7722"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <div class="flex flex-row-reverse items-center px-3 gap-5">
-                    <span class="text-sm font-bold text-gray-800">
-                      <h5>2٬250٬000 تومان/ هرشب</h5>
-                    </span>
+                    </p>
+                    <img
+                      src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                    />
+                  </span>
+                  <span class="text-icon gap-3">
+                    <p class="text-text-gray">کرج , کردان</p>
+                    <img src="src/assets/img/svg/Vector (2).svg" />
+                  </span>
+                  <span class="flex flex-row-reverse items-center">
+                    <p class="text-text-gray w-60">
+                      <del> 2٬250٬000 تومان/ هرشب </del>
+                      2٬250٬000 تومان/ هرشب
+                      <br />
+                    </p>
                     <button class="btn mr-30">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 35 26"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                      <img src="src/assets/img/svg/Vector (3).svg" />
                     </button>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="slide">
-              <div class="carts-dec-2">
+            <div class="slide border-2 border-primary shadow-2xl">
+              <div>
                 <!-- Image -->
-                <div class="relative rounded-md">
-                  <img src="src/assets/img/swiper21.png" class="pic-swiper-1" />
+                <div class="relative">
+                  <img
+                    src="src/assets/img/imgs/644f7520bb2a9e327b6c075284228f83f96680d5.jpg"
+                    class="pic-swiper-1"
+                  />
                   <button class="heart">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect width="30" height="30" rx="2" fill="white" />
-                      <path
-                        d="M24.3756 15.715L15.0006 25L5.62562 15.715C5.00725 15.1132 4.52017 14.39 4.19506 13.5908C3.86994 12.7915 3.71382 11.9337 3.73654 11.0711C3.75926 10.2086 3.96032 9.36015 4.32707 8.57915C4.69381 7.79815 5.21829 7.10154 5.86748 6.5332C6.51667 5.96486 7.2765 5.53709 8.09913 5.27683C8.92177 5.01657 9.78938 4.92946 10.6473 5.02098C11.5053 5.1125 12.335 5.38067 13.0842 5.80861C13.8334 6.23655 14.4859 6.81498 15.0006 7.50748C15.5175 6.82 16.1708 6.24663 16.9195 5.82323C17.6682 5.39984 18.4962 5.13554 19.3518 5.04688C20.2073 4.95822 21.072 5.0471 21.8916 5.30797C22.7112 5.56883 23.4682 5.99607 24.1151 6.56293C24.762 7.12979 25.2849 7.82408 25.6511 8.60234C26.0174 9.3806 26.219 10.2261 26.2435 11.0859C26.268 11.9456 26.1147 12.8012 25.7933 13.599C25.4719 14.3969 24.9893 15.1198 24.3756 15.7225"
-                        stroke="black"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <img src="src/assets/img/svg/tabler_heart.svg" />
                   </button>
                 </div>
                 <!-- Content -->
-                <div class="p-3">
-                  <p>واحد ویلایی استخردار</p>
-                  <div class="text-icon gap-1">
-                    <h5 class="text-gray-500">
+                <div class="px-3 mx-2 mt-3">
+                  <h5>اقامتگاه بوم گردی</h5>
+                  <span class="text-icon gap-1">
+                    <p class="text-text-gray">
                       لورم ایپسوم متن ساختگی با تولید
-                    </h5>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.9 13.2015C5.7 14.1015 5.7 15.903 6.9 16.803L15.903 23.547C17.3865 24.657 19.503 23.5995 19.503 21.747V8.2545C19.503 6.4005 17.385 5.343 15.903 6.4545L6.9 13.2015ZM22.5 24C22.5 24.1989 22.579 24.3897 22.7197 24.5303C22.8603 24.671 23.0511 24.75 23.25 24.75C23.4489 24.75 23.6397 24.671 23.7803 24.5303C23.921 24.3897 24 24.1989 24 24V6C24 5.80109 23.921 5.61032 23.7803 5.46967C23.6397 5.32902 23.4489 5.25 23.25 5.25C23.0511 5.25 22.8603 5.32902 22.7197 5.46967C22.579 5.61032 22.5 5.80109 22.5 6V24Z"
-                        fill="#CC7722"
-                      />
-                    </svg>
-                  </div>
-                  <div class="text-icon gap-3">
-                    <h5 class="text-gray-500">کرج , کردان</h5>
-                    <svg
-                      width="20"
-                      height="24"
-                      viewBox="0 0 20 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10 22.7082L4 16.7082C2.64142 15.4931 1.68382 13.894 1.25392 12.1227C0.82401 10.3514 0.942062 8.49134 1.59245 6.7886C2.24284 5.08586 3.39491 3.62073 4.89621 2.58709C6.39751 1.55344 8.17728 1 10 1C11.8227 1 13.6025 1.55344 15.1038 2.58709C16.6051 3.62073 17.7572 5.08586 18.4076 6.7886C19.0579 8.49134 19.176 10.3514 18.7461 12.1227C18.3162 13.894 17.3586 15.4931 16 16.7082L10 22.7082Z"
-                        stroke="#CC7722"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <div class="flex flex-row-reverse items-center px-3 gap-5">
-                    <span class="text-sm font-bold text-gray-800">
-                      <h5>2٬250٬000 تومان/ هرشب</h5>
-                    </span>
+                    </p>
+                    <img
+                      src="src/assets/img/svg/fluent_arrow-eject-20-filled.svg"
+                    />
+                  </span>
+                  <span class="text-icon gap-3">
+                    <p class="text-text-gray">کرج , کردان</p>
+                    <img src="src/assets/img/svg/Vector (2).svg" />
+                  </span>
+                  <span class="flex flex-row-reverse items-center">
+                    <p class="text-text-gray w-60">
+                      <del> 2٬250٬000 تومان/ هرشب </del>
+                      2٬250٬000 تومان/ هرشب
+                      <br />
+                    </p>
                     <button class="btn mr-30">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 35 26"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M33.4167 13H0.75M0.75 13L13 0.75M0.75 13L13 25.25"
-                          stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
+                      <img src="src/assets/img/svg/Vector (3).svg" />
                     </button>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1859,47 +793,42 @@
         </div>
       </div>
       <!-- end of price -->
+      <div class="Separator"></div>
 
       <!-- reservation -->
-      <div>
-        <h4 class="px-80 pt-30 pb-10 text-primary">
-          با چند قدم ساده، اقامتگاه دلخواه‌تان را رزرو کنید!
-        </h4>
-        <div class="flex flex-row-reverse justify-center gap-10 items-center">
-          <div class="h-150 pt-8">
-            <p>
-              1 ) مقصد ، تاریخ و تعداد نفرات را وارد کنید . <br />
-              2 ) تصاویر ، جزئیات و نظرات را بررسی کنید . <br />
-              3) اطلاعات را وارد و ثبت کنید .<br />
-              4 ) پیامک تایید دریافت کنید . <br />
-              5 ) رزرو شما قطعی می شود . <br />
-              6 ) اطلاعات ورود + پشتیبانی 24 ساعته . <br />
-            </p>
-          </div>
-          <div class="p-10 bg-secondary rounded-3xl shadow">
-            <img src="public/image copy 9.png" alt="" class="w-300 h-143.75" />
-          </div>
-        </div>
-        <div class="blur-cart">
-          <p>همین حالا اقامتگاه دلخواه‌تان را جستجو کنید .</p>
-          <button class="btn text-bg-color">
-            <a href=""> شروع جستجو</a>
-            <svg
-              width="10"
-              height="20"
-              viewBox="0 0 10 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.73716 18.4492L2.05252 10.6412C1.88398 10.4708 1.78945 10.2409 1.78945 10.0012C1.78945 9.7616 1.88398 9.53163 2.05252 9.36127L9.73549 1.55164C9.90394 1.38022 9.99833 1.1495 9.99833 0.909169C9.99833 0.668836 9.90394 0.438117 9.73549 0.266699C9.6532 0.182289 9.55485 0.115206 9.44622 0.0694016C9.3376 0.0235975 9.22091 0 9.10302 0C8.98514 0 8.86844 0.0235975 8.75982 0.0694016C8.6512 0.115206 8.55284 0.182289 8.47055 0.266699L0.787581 8.073C0.282728 8.58718 -0.000123024 9.27898 -0.000123024 9.99957C-0.000123024 10.7202 0.282728 11.412 0.787581 11.9261L8.47055 19.7324C8.55287 19.8171 8.65133 19.8844 8.7601 19.9304C8.86888 19.9763 8.98577 20 9.10385 20C9.22194 20 9.33883 19.9763 9.44761 19.9304C9.55638 19.8844 9.65484 19.8171 9.73716 19.7324C9.90561 19.561 10 19.3303 10 19.09C10 18.8496 9.90561 18.6189 9.73716 18.4475"
-                fill="white"
-              />
-            </svg>
-          </button>
+      <h3 class="pb-15 pr-50 text-primary">
+        با چند قدم ساده، اقامتگاه دلخواه‌تان را رزرو کنید!
+      </h3>
+      <div class="relative h-150">
+        <h5 class="font-light absolute right-50 top-10">
+          1 ) مقصد ، تاریخ و تعداد نفرات را وارد کنید . <br />
+          2 ) تصاویر ، جزئیات و نظرات را بررسی کنید . <br />
+          3) اطلاعات را وارد و ثبت کنید .<br />
+          4 ) پیامک تایید دریافت کنید . <br />
+          5 ) رزرو شما قطعی می شود . <br />
+          6 ) اطلاعات ورود + پشتیبانی 24 ساعته . <br />
+        </h5>
+        <div
+          class="p-5 bg-secondary rounded-3xl shadow absolute left-50 bottem-20"
+        >
+          <img
+            src="src/assets/img/imgs/cdb3acf9fc704ce3645f9db1a1ba89f677c3e1d7.jpg"
+            alt=""
+            class="w-350 h-175 rounded-md"
+          />
         </div>
       </div>
+      <div class="blur-cart">
+        <h4 class="font-light text-center px-15">
+          همین حالا اقامتگاه دلخواه‌تان را جستجو کنید .
+        </h4>
+        <button class="btn">
+          <a href=""> شروع جستجو</a>
+          <img src="src/assets/img/svg/Vector.svg" />
+        </button>
+      </div>
       <!-- end of reservation -->
+      <div class="Separator"></div>
 
       <!-- users -->
       <!-- <div class="flex my-20 flex-col w-full h-250 bg-secondary mt-50">
@@ -2060,313 +989,156 @@
       </div> -->
 
       <!-- BLOG -->
-      <div class="pt-50">
-        <h3 class="text-center text-primary">نوشته‌های تازه از نیمان</h3>
-        <h4 class="text-center pb-30 pt-10">
-          «از ایده‌های سفر تا نکات رزرو مطمئن؛ هر هفته با مطالب تازه همراه
-          باشید.»
-        </h4>
-        <div class="flex flex-row justify-center gap-10 h-200">
-          <!-- btn -->
-          <div class="flex flex-col p-5 gap-3 shadow h-155 w-132.5">
-            <img
-              src="src/assets/img/blog-1.png"
-              alt=""
-              class="p-2 w-116.75 h-64.5"
-            />
-            <p class="px-5">این نکات مهم را قبل از رزرو ویلا بدانید!</p>
-            <h5 class="px-5">
-              اگر قصد سفر به جنوب دارید، انتخاب ویلای مناسب می‌تواند تفاوت بزرگی
-              در تجربه سفر شما ایجاد کند. در این مطلب بهترین مناطق ساحلی، نکات
-              انتخاب ویلا و میانگین قیمت‌ها را بررسی کرده‌ایم . . .
-            </h5>
-            <button class="btn w-60 py-2 mx-5 my-3 rounded-2xl">
-              <a href=""> ادامه مطلب</a>
-              <svg
-                width="10"
-                height="20"
-                viewBox="0 0 10 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.73716 18.4492L2.05252 10.6412C1.88398 10.4708 1.78945 10.2409 1.78945 10.0012C1.78945 9.7616 1.88398 9.53163 2.05252 9.36127L9.73549 1.55164C9.90394 1.38022 9.99833 1.1495 9.99833 0.909169C9.99833 0.668836 9.90394 0.438117 9.73549 0.266699C9.6532 0.182289 9.55485 0.115206 9.44622 0.0694016C9.3376 0.0235975 9.22091 0 9.10302 0C8.98514 0 8.86844 0.0235975 8.75982 0.0694016C8.6512 0.115206 8.55284 0.182289 8.47055 0.266699L0.787581 8.073C0.282728 8.58718 -0.000123024 9.27898 -0.000123024 9.99957C-0.000123024 10.7202 0.282728 11.412 0.787581 11.9261L8.47055 19.7324C8.55287 19.8171 8.65133 19.8844 8.7601 19.9304C8.86888 19.9763 8.98577 20 9.10385 20C9.22194 20 9.33883 19.9763 9.44761 19.9304C9.55638 19.8844 9.65484 19.8171 9.73716 19.7324C9.90561 19.561 10 19.3303 10 19.09C10 18.8496 9.90561 18.6189 9.73716 18.4475"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
-          <!-- btn -->
-          <div class="flex flex-col p-5 gap-3 shadow h-155 w-132.5">
-            <img
-              src="src/assets/img/blog-1.png"
-              alt=""
-              class="p-2 w-116.75 h-64.5"
-            />
-            <p class="px-5">این نکات مهم را قبل از رزرو ویلا بدانید!</p>
-            <h5 class="px-5">
-              اگر قصد سفر به جنوب دارید، انتخاب ویلای مناسب می‌تواند تفاوت بزرگی
-              در تجربه سفر شما ایجاد کند. در این مطلب بهترین مناطق ساحلی، نکات
-              انتخاب ویلا و میانگین قیمت‌ها را بررسی کرده‌ایم . . .
-            </h5>
-            <button class="btn w-60 py-2 mx-5 my-3 rounded-2xl">
-              <a href=""> ادامه مطلب</a>
-              <svg
-                width="10"
-                height="20"
-                viewBox="0 0 10 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.73716 18.4492L2.05252 10.6412C1.88398 10.4708 1.78945 10.2409 1.78945 10.0012C1.78945 9.7616 1.88398 9.53163 2.05252 9.36127L9.73549 1.55164C9.90394 1.38022 9.99833 1.1495 9.99833 0.909169C9.99833 0.668836 9.90394 0.438117 9.73549 0.266699C9.6532 0.182289 9.55485 0.115206 9.44622 0.0694016C9.3376 0.0235975 9.22091 0 9.10302 0C8.98514 0 8.86844 0.0235975 8.75982 0.0694016C8.6512 0.115206 8.55284 0.182289 8.47055 0.266699L0.787581 8.073C0.282728 8.58718 -0.000123024 9.27898 -0.000123024 9.99957C-0.000123024 10.7202 0.282728 11.412 0.787581 11.9261L8.47055 19.7324C8.55287 19.8171 8.65133 19.8844 8.7601 19.9304C8.86888 19.9763 8.98577 20 9.10385 20C9.22194 20 9.33883 19.9763 9.44761 19.9304C9.55638 19.8844 9.65484 19.8171 9.73716 19.7324C9.90561 19.561 10 19.3303 10 19.09C10 18.8496 9.90561 18.6189 9.73716 18.4475"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
-          <!-- btn -->
-          <div class="flex flex-col p-5 gap-3 shadow h-155 w-132.5">
-            <img
-              src="src/assets/img/blog-1.png"
-              alt=""
-              class="p-2 w-116.75 h-64.5"
-            />
-            <p class="px-5">این نکات مهم را قبل از رزرو ویلا بدانید!</p>
-            <h5 class="px-5">
-              اگر قصد سفر به جنوب دارید، انتخاب ویلای مناسب می‌تواند تفاوت بزرگی
-              در تجربه سفر شما ایجاد کند. در این مطلب بهترین مناطق ساحلی، نکات
-              انتخاب ویلا و میانگین قیمت‌ها را بررسی کرده‌ایم . . .
-            </h5>
-            <button class="btn w-60 py-2 mx-5 my-3 rounded-2xl">
-              <a href=""> ادامه مطلب</a>
-              <svg
-                width="10"
-                height="20"
-                viewBox="0 0 10 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.73716 18.4492L2.05252 10.6412C1.88398 10.4708 1.78945 10.2409 1.78945 10.0012C1.78945 9.7616 1.88398 9.53163 2.05252 9.36127L9.73549 1.55164C9.90394 1.38022 9.99833 1.1495 9.99833 0.909169C9.99833 0.668836 9.90394 0.438117 9.73549 0.266699C9.6532 0.182289 9.55485 0.115206 9.44622 0.0694016C9.3376 0.0235975 9.22091 0 9.10302 0C8.98514 0 8.86844 0.0235975 8.75982 0.0694016C8.6512 0.115206 8.55284 0.182289 8.47055 0.266699L0.787581 8.073C0.282728 8.58718 -0.000123024 9.27898 -0.000123024 9.99957C-0.000123024 10.7202 0.282728 11.412 0.787581 11.9261L8.47055 19.7324C8.55287 19.8171 8.65133 19.8844 8.7601 19.9304C8.86888 19.9763 8.98577 20 9.10385 20C9.22194 20 9.33883 19.9763 9.44761 19.9304C9.55638 19.8844 9.65484 19.8171 9.73716 19.7324C9.90561 19.561 10 19.3303 10 19.09C10 18.8496 9.90561 18.6189 9.73716 18.4475"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
+      <h3 class="text-center">نوشته‌های تازه از نیمان</h3>
+      <h4 class="text-center pt-5 pb-20">
+        «از ایده‌های سفر تا نکات رزرو مطمئن؛ هر هفته با مطالب تازه همراه باشید.»
+      </h4>
+      <div class="flex flex-row justify-center gap-15">
+        <!-- cart -->
+        <div class="flex flex-col p-5 gap-3 shadow h-140 w-132.5 rounded-md">
+          <img src="src/assets/img/imgs/blog-1.png" />
+          <h5 class="px-5">این نکات مهم را قبل از رزرو ویلا بدانید!</h5>
+          <p class="px-5">
+            اگر قصد سفر به جنوب دارید، انتخاب ویلای مناسب می‌تواند تفاوت بزرگی
+            در تجربه سفر شما ایجاد کند. در این مطلب بهترین مناطق ساحلی، نکات
+            انتخاب ویلا و میانگین قیمت‌ها را بررسی کرده‌ایم . . .
+          </p>
+          <button class="btn w-60">
+            <a href="#"> ادامه مطلب</a>
+            <img src="src/assets/img/svg/Vector.svg" />
+          </button>
+        </div>
+        <!-- btn -->
+        <div class="flex flex-col p-5 gap-3 shadow h-140 w-132.5 rounded-md">
+          <img src="src/assets/img/imgs/blog-2.png" />
+          <h5 class="px-5">این نکات مهم را قبل از رزرو ویلا بدانید!</h5>
+          <p class="px-5">
+            اگر قصد سفر به جنوب دارید، انتخاب ویلای مناسب می‌تواند تفاوت بزرگی
+            در تجربه سفر شما ایجاد کند. در این مطلب بهترین مناطق ساحلی، نکات
+            انتخاب ویلا و میانگین قیمت‌ها را بررسی کرده‌ایم . . .
+          </p>
+          <button class="btn w-60">
+            <a href="#"> ادامه مطلب</a>
+            <img src="src/assets/img/svg/Vector.svg" />
+          </button>
+        </div>
+        <!-- btn -->
+        <div class="flex flex-col p-5 gap-3 shadow h-140 w-132.5 rounded-md">
+          <img src="src/assets/img/imgs/blog-3.png" />
+          <h5 class="px-5">این نکات مهم را قبل از رزرو ویلا بدانید!</h5>
+          <p class="px-5">
+            اگر قصد سفر به جنوب دارید، انتخاب ویلای مناسب می‌تواند تفاوت بزرگی
+            در تجربه سفر شما ایجاد کند. در این مطلب بهترین مناطق ساحلی، نکات
+            انتخاب ویلا و میانگین قیمت‌ها را بررسی کرده‌ایم . . .
+          </p>
+          <button class="btn w-60">
+            <a href="#"> ادامه مطلب</a>
+            <img src="src/assets/img/svg/Vector.svg" />
+          </button>
         </div>
       </div>
       <!-- end of BLOG -->
+      <div class="Separator"></div>
 
       <!-- footer -->
-      <div
-        class="pt-20 bg-secondary mt-50 relative mx-20 rounded-3xl shadow my-20"
-      >
-        <div
-          name="logo-text"
-          class="flex flex-col items-end justify-start pr-40"
-        >
-          <img src="src/assets/img/logo-bl.png" alt="" class="w-30 h-30" />
-          <p class="w-110">
-            در نیمان تلاش می‌کنیم بهترین اقامتگاه‌ها در سراسر ایران—from ویلاهای
-            ساحلی شمال تا بوم‌گردی‌های گرم جنوب—را با دقت بررسی، انتخاب و در
-            اختیار شما قرار دهیم. هر اقامتگاه قبل از نمایش در سایت، از نظر
-            استانداردهای نظافتی، کیفیت امکانات، موقعیت و رضایت کاربران ارزیابی
-            می‌شود تا شما با خیال راحت، اقامت دلخواه‌تان را رزرو کنید.
-          </p>
-        </div>
-        <!-- social media -->
-        <div
-          class="bg-primary absolute left-20 top-0 w-3xl rounded-3xl flex flex-row-reverse p-10 justify-center items-center"
-        >
-          <p class="text-bg-color">
-            همراه سفرهای نیمان در شبکه‌های اجتماعی باشید .
-          </p>
-          <div class="flex flex-row-reverse gap-3 pr-5">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <rect width="40" height="40" fill="url(#pattern0_625_3034)" />
-              <defs>
-                <pattern
-                  id="pattern0_625_3034"
-                  patternContentUnits="objectBoundingBox"
-                  width="1"
-                  height="1"
-                >
-                  <use xlink:href="#image0_625_3034" transform="scale(0.004)" />
-                </pattern>
-                <image
-                  id="image0_625_3034"
-                  width="250"
-                  height="250"
-                  preserveAspectRatio="none"
-                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAQAAAAi5ZK2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfpCRMUEADjzmMXAAAPeElEQVR42u2de5xXYx7HvzM1mkqTaqIaFsWmYW2ZVtEFUUnZrFskIrciqWzrkltWW5EUuWSFValXLoVFSwhtuaUsNpdUq2J1wXTVjBn+WPsyMjWfz/ec55znnN/3ff6d3/c8z/nMOef3O+d53o+IYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRhGYsiiP7GvDIi5zZNkRepy6CWtyE9sljFSGl0Dn5DvY93mS3bKIu8m35HHoEx6RtvExrIh5tgHpyryg+Ub+ggMjb6ZvWMOfZsUpibyRvIfuv+T42nqozHHvlCqpSLymvI63fd5sls8jc2X/8Yc+5Wp+Bo9ne73UqkXX4N7xhz6t/KbxIc+iu71ejkw3iZPizn2dyQn0ZH3pXtcIsfE3eg9ZFXMsV+f4Mg7yLdkb8vlbB8a3kXKYw29VFonNPKmspbu7Z99afwDMZ/rH0huAiOvJx/SPX3Un0dSeYpfmeFuIxMXeY7MpXv5ltTyqQvHxn6Jb5Ow0O+h+7hS9vKtE3fHfK5/KDUTFPkwun8b5VD/ulFbPok59tsSE3l3+tXKd3Kin11pR3cl3K1MjkpE5K1kM923gS4eBIbD7eCbr6WylaxcVw4A/mqZtJQtnkdeIG9IAfmZiXKZvx3Klfeh/9tJdOVa8hFUeaLnkdeUN+izfI5U97tTbaBLfLl0oysfAVbu6vHRyZZZimcQe/h/x8JeH6xRvCUaA1Ve5fFBupWOfJ00S8LXlBryL6g7f3NW+a+eHpnzFMNEjkjKD5KWUgJ16WTF916s8gkeHpWOsp1+tXJWkp423Qh1aq3sSVe+Cbx51PfsiDSXr+jz/LpkPWKsLm9C3ZqhqPw2VHmKV8ejvnxMRz4jtB/SkdFCtkFdO52uXAhWPsWbY5EjLykGeNeQBHIVOPCnEV15uLObhxvuoyNf7k3b6d+kr0EdfEpxicfGjs7y4jhcQ0deLIdIYmkuW6FO8sN/DgIr94r9GJwiZfRL4s6SaIZA3fxG9qErX+Hs5hEmRYpXKwMk4WTLPKijL9DfVLPlFUc3j/BoIqtT/Hp4F+wvG6HOXqiovAmqfE5MPd9dltCRP5uSGTsyAOruZsUz5kud3TzCuMY9SUe+WHaXlJAlz0Fdfoke55klcxzdPIIzno7881j+OZ1RAD6C5AcK7C1fQ5UvirjH59ORb03cwM4qwd4vbZFf05UvcHbz0NNFSulXK2dICsG8FQsUX2SegSq/FtkkgRbg1Sdtc28rAfVW/FHxw2iDo5uHhgaKMcEPSmrBvBXfKh5B9nF282DZDXwuUXF7NZmvVlAwb4Vm6vFjzm4e3K+JKXTkn0q+pBrUW3EtXbmhfOno5sFwAx35hgiuPrHTE3zlUERXPsnZzQPlNHo2X4l0kowA81YsUUh0MG/LIkfeitayhT7PL5IMAfVW3KyojL3eGO6gV/sphEujJIPAvBWlcjhduQd4US0KuUd1wKHZFbfHU+e7rILJoDSLn3r8kLObx86pJk/TkS+S2pJhoN6KW+nKdcHKYXpbJtKRr5G9JQPpBF3iy6QjXflYZzePyhlER75JWkqGgnkrliveMN/r7ObxS46nX61E7m32CdRbcaezyrcE7kOhwts8WDKaduDU4y6KymXQOdchUPsbyUo68vsl4xkHOpXy6Mrjwefe+uFJubKQjvzluLzNPlED9FbwU49Rb8UEZcuzFEbcpUmQC0RBG1BNxE89bgtVLpOjVe2+WeFtPsDi/j+ot4Kfeox5K1ZIHbpyL/rVynblP1dqL/HYI8yHnVVmpUftk+pt9omWoKGBn3qMeSs46dH+4Jv7itsIC/mXYIMPNFOPR4QsPcqT9+jIZyZPLhAFqLdilqLyW1Dlh6BqOfJC0r3NPoF6K/ipx6i3ApEe8crjFf55m33CnbfimpBuHlfQkW9MwaJCTkG9FU8rLvGYt2L6LqucoPA297BYqwL1VvR1Vvm0XfzC2ESf55dapAiDwanHv6IrDwWVnJXfgRvLZ3TkEyxO9BLvzluBVX6yks9qvM3P+e5t9gnUW3GxojJ2ge6zw+eyZIbC21zXomRAvRX86wudt2IMHfkXsq/FyIF6K+Y781Y8X+Hmca7C29zWQuRBvRWDFJWxmePn//j3miUxe1uAOtx5KzAtSLHsKyJNZR19ng+38PRg3oqFzrwVL0oDcOxNwr3NPoF6K/5EV24C3jx47V/K5QJRgHor+Kfbfeg4sRH6DS204Mx05q14NPTIi+VgCywMUG/F9c4q43KB4yyusEC9Fa0dVUa3/hZVmEwDH3vm0pWnhxb5rRZTuKDeipHOKle1PZMWb7NPoN4K3qzaI4TI30mPt9kvMG/Fh4qpxw8GjDxl3mafQL0V/JoIqLdiZ97mwy0cd6DeiqPoysfSE5R+2tsfLBi3oN4Kfl7aPcrQh1korqkNLlt5l6LyJ4rIH7BIouBI0FvRla7cjl457RWTC0TFOPDt2B50ZW69lWVp9zb7BOqt4L0uufIB4W0+0KKIkiJo6vH30p2u3Bacv1Iix1gMUYN6K+rRlUeDI13rWQjRX+LfhcKZqqiMeSumWAjRg3orTqUrtwJvHqdYCNGDeSvWKWaGY96KtUld0D7JoN6K2YrKmLdiloUQPai34ky6MuqtOMNCiB7MW/G1wqt+tTMjhhEQd94Kd5WNwKB2ifOcVe5rIUTPYHBEuitvhcaIYQS+xGN2ibnOvBUv2Ny16EG9Ff2dVb7YQoie/s68FZc4q2wEBPdWVKMrzwErZ1sMUYN6KwY7qzzIQogezFuxTQrpyv2cGTGMwLjzVvwdqrzApjZFT2NZD4VzlaKyKyOGEZgznXkrznJW2QgM5q1Y7MxboTFiGAFB7RI3OKt8nYUQPai34nfOKre2EKJnKhTOvxXeikecGTGMgKB2iVHOKo+0EKKnMzipuT1duQd4iW9jIUTPbGfeigec3TyMQBTJFnBO2ji6NmrEGGsxREkBYXR1563QVDaU1AGnPLn3Viw351Q0VJOnaJ/E3fReUG/FRAskCu5QSETK5Xh6P+2cGTEMkguUuqDViqnHt0OVVymMGAZBVylV2+B4ZRDqrbjfgnFHC3A5np1tvA8O9VacYOG4IV+WBZZ91qf3OtpZZQO41C4IQes7jd6veStiIwt8rxZkPeWd0dK8FfFwU2iifo234kbQW7GXBRUep6tlvtF6K2ZbVGHRjl4Ss6rtLLoN5q2IlP3ky9CX2XLnrfhaCiyyoOTJe04W1HteManZvBWRUF2ep+N8W76B/q4f3ZqDQG/FuRZcEO6iI18pe4Ez3ooVC94PMW+Fa4bSkW+UQ0UEnfH2ojNvxVzzVujoBj71/mn7Tk788bPojLdL6FaZt8IhB0sxfZ4PrPB5bMbbFoXRfYB5K9zQWD6jI79vhxrYjLd/KrwVqBHDvBUENeV1OvI5Un2HKui8tKF0+1BvxeUWJX4m8QviflDp2JXfg1OP+fXQzVsRMqMVr1Ca7aQW9mZukWLqsTsjRgZyLh35Njlip9XQeWlXK751mLciJDrQr1bKq3h5gs142/7j73uG3uatCIOmso4+z6vWA9wP1VmiWHTPvBWBqS8f0ZHPAJ585clKqNYIusXo74PrLdzKyZEX6cjnSw2oNrZSs3krImcSHflyYlGdic6mHk8zb4WWq+jIi+UQon4tcKXm0XTLzVuh5GR6reNS6UzuA1upuUw60K3vAt48zFtRgcNkM32eD1DsZyxU+VPF1GPMW6ExYqSUJuDlseJ2m2pP6ErN4+nKqLfiNotbRGR3WUJH/qz60eZh0KSFMjmarmzeCphsUBVUcXtf8gLs8WZoHysU3oq7zVuBcTsd+eeyT8CnAW9D+7mXrmzeCojz6ci3hvAN+LfQSs3l0o2ubN6KKulMywXKQ5o9cl3M3orVmeqtOEghF7gypH1Xlzeg/T1IV84Ffx9kpLeiAXj/CxbBrv7lsEkLJ9OV25i3onJ2k5fpyF8FX62gDAOnHu9JVx5l3opfkiVT6Mg/lYah/1h8BdrzdMUjIMxbMTWTQr+BjnyDk+GFTWUTtPfT6cqot+LUTIn8NFouUCKdHLXlMnDQZSO68o1g5YzwVrSGvc0/bRc5vNH8A2rBk4rfB2+at+J/7AcOLgq2LgPXImzqVB+6cgvQW3FmuiOvA37Bqbg97nxi0IXg1GP+4S82LERjxEgM1eRpOvJFUjuClj1r3gpXTKQjXxPROdAEnJd2AV25eWZ7Ky6nI98kLSNr3Tng1ONmdOXBmeutOJ5+tVImPSNt4WPmrQiXQlD7U3EbEnEbG4LSsoF0ZdRb0T9NkTcCR4/F/Q7qJPNWhEVNWUhHPk8xpywMZkCtW2Deiqq6+wgd+VLF0IVwaCBfQC28gq6cUd6KkXTk62O9yJ3ozFuBee22SWHSI+9LR75dMfQ4XB4yb0UQ2ivkAmfH3uq64NfO4XRl1FtxZXIj31/W0uf5CC9afhz06rdEiujKKfdW5IHDAytuM715PHGvM28F5rVLpLciR+bSkb8ltbxpPzpp4Sa6coq9FffQka/0bARJO2jidKkcTldOqbdiGB35RoXXyTUTwGcK/NTjFHoruiu8zT087EctUHl0C10Z9Vb8JSmRt1LIBQZ62pe2oLeiI125MzipuX0SItfIBe7wuD9jnHkrJqfFW1ETHP+5a2+zT6CTFvh/3JR4K7JllsLbXNf721UJ9CSxC125Uxq8FWPpyNcpBh9Fz4jYvRV1fD00/ejId+Vt9gl0sc1JikdAmNfuLj8PTEfI7PDzC2LvxPwIRRfb5L0VRybXW9EcHCBQcbs2UY+bsMU21ygGf4xzZsSohPBebeTL6/S9eYr0le8TFHp1mQ+ZblbIV2TlXHA4xmTFmHtn5MhL9Fn+WshygWiuZlvpfoa7dfflUGTJw069zT4xJObQvfFWXOvY2+zXc4h5McfuhbfiVNrbXCLHSXJBJy2422L3VhQp5AIDJNlcEnPoMXsrCmQ13eSxknTQSQvuttnxdb6OvEs395lULElXoHgmEe4Wk7eimjxFN3VxaszH/WIOPSZvxZ2Re5v94omYY4/BW3Eh3citiuGDPoNOWnC3nRdth7sqvM29JG30jjn04ii9FYUKb3M6F5edGXPskXkr8mVZrN5mn8hX+PDC3SLxVuTKgti9zT7RM+bQI/BWZIFLz/98lGi+pJmpMcc+n33ywY5BbSGrZQz5mcmyPtWhD5JVMU+5bCYfi2EYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYRjr5AZLZFY5FD9xbAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI1LTA5LTE5VDIwOjE2OjAwKzAwOjAw7nWiWAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNS0wOS0xOVQyMDoxNjowMCswMDowMJ8oGuQAAAAASUVORK5CYII="
-                />
-              </defs>
-            </svg>
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_625_3029)">
-                <path
-                  d="M30.625 0H9.375C4.19733 0 0 4.19733 0 9.375V30.625C0 35.8027 4.19733 40 9.375 40H30.625C35.8027 40 40 35.8027 40 30.625V9.375C40 4.19733 35.8027 0 30.625 0Z"
-                  fill="url(#paint0_radial_625_3029)"
-                />
-                <path
-                  d="M30.625 0H9.375C4.19733 0 0 4.19733 0 9.375V30.625C0 35.8027 4.19733 40 9.375 40H30.625C35.8027 40 40 35.8027 40 30.625V9.375C40 4.19733 35.8027 0 30.625 0Z"
-                  fill="url(#paint1_radial_625_3029)"
-                />
-                <path
-                  d="M20.0014 4.375C15.758 4.375 15.2253 4.39359 13.5588 4.46938C11.8953 4.54563 10.7598 4.80891 9.76641 5.19531C8.73859 5.59438 7.86688 6.12828 6.99844 6.99703C6.12922 7.86562 5.59531 8.73734 5.195 9.76469C4.8075 10.7584 4.54391 11.8944 4.46906 13.557C4.39453 15.2238 4.375 15.7566 4.375 20.0002C4.375 24.2438 4.39375 24.7747 4.46938 26.4412C4.54594 28.1047 4.80922 29.2402 5.19531 30.2336C5.59469 31.2614 6.12859 32.1331 6.99734 33.0016C7.86563 33.8708 8.73734 34.4059 9.76438 34.805C10.7586 35.1914 11.8942 35.4547 13.5573 35.5309C15.2241 35.6067 15.7563 35.6253 19.9995 35.6253C24.2434 35.6253 24.7744 35.6067 26.4409 35.5309C28.1044 35.4547 29.2411 35.1914 30.2353 34.805C31.2627 34.4059 32.1331 33.8708 33.0012 33.0016C33.8705 32.1331 34.4042 31.2614 34.8047 30.2341C35.1887 29.2402 35.4525 28.1044 35.5306 26.4416C35.6055 24.775 35.625 24.2438 35.625 20.0002C35.625 15.7566 35.6055 15.2241 35.5306 13.5573C35.4525 11.8939 35.1887 10.7586 34.8047 9.76516C34.4042 8.73734 33.8705 7.86562 33.0012 6.99703C32.1322 6.12797 31.263 5.59406 30.2344 5.19547C29.2383 4.80891 28.1022 4.54547 26.4387 4.46938C24.772 4.39359 24.2414 4.375 19.9966 4.375H20.0014ZM18.5997 7.19078C19.0158 7.19016 19.48 7.19078 20.0014 7.19078C24.1734 7.19078 24.6678 7.20578 26.3153 7.28063C27.8387 7.35031 28.6656 7.60484 29.2164 7.81875C29.9456 8.10188 30.4655 8.44047 31.012 8.9875C31.5589 9.53438 31.8973 10.0552 32.1813 10.7844C32.3952 11.3344 32.65 12.1613 32.7194 13.6847C32.7942 15.3319 32.8105 15.8266 32.8105 19.9966C32.8105 24.1666 32.7942 24.6614 32.7194 26.3084C32.6497 27.8319 32.3952 28.6587 32.1813 29.2089C31.8981 29.9381 31.5589 30.4573 31.012 31.0039C30.4652 31.5508 29.9459 31.8892 29.2164 32.1725C28.6663 32.3873 27.8387 32.6413 26.3153 32.7109C24.6681 32.7858 24.1734 32.802 20.0014 32.802C15.8292 32.802 15.3347 32.7858 13.6877 32.7109C12.1642 32.6406 11.3373 32.3861 10.7861 32.1722C10.057 31.8889 9.53609 31.5505 8.98922 31.0036C8.44234 30.4567 8.10391 29.9372 7.82 29.2077C7.60609 28.6575 7.35125 27.8306 7.28188 26.3072C7.20703 24.66 7.19203 24.1653 7.19203 19.9927C7.19203 15.82 7.20703 15.328 7.28188 13.6808C7.35156 12.1573 7.60609 11.3305 7.82 10.7797C8.10328 10.0505 8.44234 9.52969 8.98938 8.98281C9.53641 8.43594 10.057 8.09734 10.7862 7.81359C11.337 7.59875 12.1642 7.34484 13.6877 7.27484C15.1291 7.20969 15.6877 7.19016 18.5997 7.18687V7.19078ZM28.342 9.78516C27.3069 9.78516 26.467 10.6242 26.467 11.6595C26.467 12.6947 27.3069 13.5345 28.342 13.5345C29.3772 13.5345 30.217 12.6947 30.217 11.6595C30.217 10.6244 29.3772 9.78453 28.342 9.78453V9.78516ZM20.0014 11.9759C15.5702 11.9759 11.9773 15.5688 11.9773 20.0002C11.9773 24.4316 15.5702 28.0227 20.0014 28.0227C24.4328 28.0227 28.0244 24.4316 28.0244 20.0002C28.0244 15.5689 24.4325 11.9759 20.0011 11.9759H20.0014ZM20.0014 14.7917C22.8778 14.7917 25.2098 17.1234 25.2098 20.0002C25.2098 22.8766 22.8778 25.2086 20.0014 25.2086C17.125 25.2086 14.7931 22.8766 14.7931 20.0002C14.7931 17.1234 17.1248 14.7917 20.0014 14.7917Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <radialGradient
-                  id="paint0_radial_625_3029"
-                  cx="0"
-                  cy="0"
-                  r="1"
-                  gradientUnits="userSpaceOnUse"
-                  gradientTransform="translate(10.625 43.0808) rotate(-90) scale(39.643 36.8711)"
-                >
-                  <stop stop-color="#FFDD55" />
-                  <stop offset="0.1" stop-color="#FFDD55" />
-                  <stop offset="0.5" stop-color="#FF543E" />
-                  <stop offset="1" stop-color="#C837AB" />
-                </radialGradient>
-                <radialGradient
-                  id="paint1_radial_625_3029"
-                  cx="0"
-                  cy="0"
-                  r="1"
-                  gradientUnits="userSpaceOnUse"
-                  gradientTransform="translate(-6.70016 2.88141) rotate(78.681) scale(17.7206 73.045)"
-                >
-                  <stop stop-color="#3771C8" />
-                  <stop offset="0.128" stop-color="#3771C8" />
-                  <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
-                </radialGradient>
-                <clipPath id="clip0_625_3029">
-                  <rect width="40" height="40" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_625_3026)">
-                <path
-                  d="M20 0C14.6969 0 9.60625 2.10844 5.85938 5.85781C2.10866 9.6087 0.00107328 14.6956 0 20C0 25.3022 2.10938 30.3928 5.85938 34.1422C9.60625 37.8916 14.6969 40 20 40C25.3031 40 30.3937 37.8916 34.1406 34.1422C37.8906 30.3928 40 25.3022 40 20C40 14.6978 37.8906 9.60719 34.1406 5.85781C30.3937 2.10844 25.3031 0 20 0Z"
-                  fill="url(#paint0_linear_625_3026)"
-                />
-                <path
-                  d="M9.0534 19.7886C14.8846 17.2486 18.7721 15.574 20.7159 14.7648C26.2721 12.4545 27.4253 12.0533 28.1784 12.0397C28.344 12.037 28.7128 12.078 28.9534 12.2725C29.1534 12.4365 29.2096 12.6584 29.2378 12.8142C29.2628 12.9698 29.2971 13.3245 29.269 13.6014C28.969 16.7639 27.6659 24.4383 27.0034 27.9805C26.7253 29.4792 26.1721 29.9817 25.6378 30.0308C24.4753 30.1376 23.594 29.2633 22.469 28.5261C20.7096 27.372 19.7159 26.6539 18.0065 25.528C16.0315 24.2267 17.3128 23.5114 18.4378 22.3426C18.7315 22.0367 23.8503 17.382 23.9471 16.9598C23.9596 16.907 23.9721 16.7101 23.8534 16.6064C23.7378 16.5023 23.5659 16.538 23.4409 16.5661C23.2628 16.6061 20.4534 18.4648 15.0034 22.142C14.2065 22.6901 13.4846 22.9573 12.8346 22.9433C12.1221 22.928 10.7471 22.5395 9.72527 22.2076C8.47527 21.8005 7.4784 21.5851 7.5659 20.8936C7.60965 20.5336 8.10652 20.1651 9.0534 19.7886Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_625_3026"
-                  x1="2000"
-                  y1="0"
-                  x2="2000"
-                  y2="4000"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#2AABEE" />
-                  <stop offset="1" stop-color="#229ED9" />
-                </linearGradient>
-                <clipPath id="clip0_625_3026">
-                  <rect width="40" height="40" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-        </div>
-        <!-- footer list -->
-        <div
-          class="flex font-sans flex-row gap-15 text-right w-7xl px-30 container mx-auto absolute top-60 left-70"
-        >
-          <ul
-            class="[&>li>a]:text-text-color [&>li>a]:text-[23px] [&>li>a]:font-light"
+      <div class="w-full rounded-3xl">
+        <div class="bg-secondary px-10 mx-20 mb-10 shadow rounded-lg">
+          <!-- social media -->
+          <div
+            class="bg-primary left-20 top-0 w-3xl rounded-3xl flex flex-row-reverse p-10 justify-center items-center"
           >
-            <li class="font-bold pb-5">
-              <a href="">نحوه رزرو اقامتگاه</a>
-            </li>
-            <li>
-              <a href="">راهنمای رزرو اقامتگاه</a>
-            </li>
-            <li>
-              <a href="">شیوه‌های پرداخت</a>
-            </li>
-            <li>
-              <a href="">لغو رزرو</a>
-            </li>
-          </ul>
+            <p class="text-bg-color">
+              همراه سفرهای نیمان در شبکه‌های اجتماعی باشید .
+            </p>
+            <div class="flex flex-row-reverse gap-3 pr-5">
+              <img
+                src="src/assets/img/svg/X_(formerly_Twitter)_logo_late_2025.svg 1.svg"
+                alt=""
+              />
+              <img src="src/assets/img/svg/skill-icons_instagram.svg" alt="" />
+              <img src="src/assets/img/svg/logos_telegram.svg" alt="" />
+            </div>
+          </div>
+          <div class="flex flex-col items-end justify-start pr-40">
+            <img src="src/assets/img/imgs/niman-bl.png" class="w-30 h-30" />
+            <p class="w-110">
+              در نیمان تلاش می‌کنیم بهترین اقامتگاه‌ها در سراسر ایران—from
+              ویلاهای ساحلی شمال تا بوم‌گردی‌های گرم جنوب—را با دقت بررسی،
+              انتخاب و در اختیار شما قرار دهیم. هر اقامتگاه قبل از نمایش در
+              سایت، از نظر استانداردهای نظافتی، کیفیت امکانات، موقعیت و رضایت
+              کاربران ارزیابی می‌شود تا شما با خیال راحت، اقامت دلخواه‌تان را
+              رزرو کنید.
+            </p>
+          </div>
+          <!-- footer list -->
+          <div
+            class="flex font-sans flex-row gap-15 text-right w-7xl px-30 container mx-auto absolute top-60 left-70"
+          >
+            <ul
+              class="[&>li>a]:text-text-color [&>li>a]:text-[23px] [&>li>a]:font-light"
+            >
+              <li class="font-bold pb-5">
+                <a href="">نحوه رزرو اقامتگاه</a>
+              </li>
+              <li>
+                <a href="">راهنمای رزرو اقامتگاه</a>
+              </li>
+              <li>
+                <a href="">شیوه‌های پرداخت</a>
+              </li>
+              <li>
+                <a href="">لغو رزرو</a>
+              </li>
+            </ul>
 
-          <ul class="text-2xl [&>li>a]:text-text-color [&>li>a]:font-light">
-            <li class="font-bold pb-5">
-              <a href="">خدمات مشتریان</a>
-            </li>
-            <li>
-              <a href="">پرسش‌های متداول</a>
-            </li>
-            <li>
-              <a href="">چطور اقامتگاه ثبت کنم؟</a>
-            </li>
-            <li>
-              <a href="">حریم شخصی کاربران</a>
-            </li>
-          </ul>
+            <ul class="text-2xl [&>li>a]:text-text-color [&>li>a]:font-light">
+              <li class="font-bold pb-5">
+                <a href="">خدمات مشتریان</a>
+              </li>
+              <li>
+                <a href="">پرسش‌های متداول</a>
+              </li>
+              <li>
+                <a href="">چطور اقامتگاه ثبت کنم؟</a>
+              </li>
+              <li>
+                <a href="">حریم شخصی کاربران</a>
+              </li>
+            </ul>
 
-          <ul class="text-2xl [&>li>a]:text-text-color [&>li>a]:font-light">
-            <li class="font-bold pb-5">
-              <a href="">اطلاعات</a>
-            </li>
-            <li>
-              <a href="">درباره نیمان</a>
-            </li>
-            <li>
-              <a href="">تماس با ما</a>
-            </li>
-            <li>
-              <a href="">فرصت‌های شغلی</a>
-            </li>
-          </ul>
-        </div>
-
-        <div
-          name="app-download"
-          class="bg-primary flex p-8 flex-row-reverse justify-center items-center gap-10 rounded-2xl mx-20 my-15 px-30"
-        >
-          <p class="text-bg-color text-3xl font-bold text-right pl-70">
-            نیمان دانلود اپلیکیشن
-          </p>
-          <img src="src/assets/img/mayket.png" class="w-75 h-25" />
-          <img src="src/assets/img/bazar-logo.png" alt="" class="w-75 h-25" />
-        </div>
-        <div name="namad-etemad" class="flex flex-row justify-center p-5">
-          <img src="src/assets/img/enamad.png" class="w-37.5 h-37.5" />
-          <img src="src/assets/img/samandehi.png" class="w-37.5 h-37.5" />
+            <ul class="text-2xl [&>li>a]:text-text-color [&>li>a]:font-light">
+              <li class="font-bold pb-5">
+                <a href="">اطلاعات</a>
+              </li>
+              <li>
+                <a href="">درباره نیمان</a>
+              </li>
+              <li>
+                <a href="">تماس با ما</a>
+              </li>
+              <li>
+                <a href="">فرصت‌های شغلی</a>
+              </li>
+            </ul>
+          </div>
+          <!-- download -->
+          <div class="download-sec">
+            <h3 class="text-right pl-70">نیمان دانلود اپلیکیشن</h3>
+            <img src="src/assets/img/imgs/mayket.png" />
+            <img src="src/assets/img/imgs/bazar-logo.png" />
+          </div>
+          <div
+            name="namad-etemad"
+            class="flex flex-row justify-center p-10 gap-5"
+          >
+            <img src="src/assets/img/imgs/samandehi.png" class="w-35 h-35" />
+            <img src="src/assets/img/imgs/enamad.png" class="w-35 h-35" />
+          </div>
         </div>
       </div>
       <!-- end of footer -->
     </main>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/App.jsx"></script>
   </body>
 </html>

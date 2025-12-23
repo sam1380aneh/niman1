@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+/* font */
+@font-face {
+  font-family: "IRANSans";
+  src: url("/src/assets/font/Iranian.Sans.ttf_p30download.com/Fonts/irsans_p30download.com.ttf")
+    format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* theme */
+@theme {
+  /* bg color */
+  --color-bg-color: #ffffff;
+  --color-primary: #cc7722;
+  --color-secondary: #fffaf0;
+
+  /* text */
+  --color-text-color: #000000;
+  --color-text-gray: #5c5c5c;
+  --color-text-white: #ffffff;
+  --color-text-orange: #cc7722;
+
+  /*  FONT SIZES  */
+  --text-xsm: 1.25rem;
+  --text-sm: 1.563rem;
+  --text-md: 1.875rem;
+  --text-lg: 2.5rem;
+  --text-xl: 3.125rem;
+  --text-2xl: 3.75rem;
+
+  /*  SPACING FOR PADDING & MARGIN */
+  --spacing-xsm: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /*  responsive  */
+  --breakpoint-xs: 20rem; /* 320px */
+  --breakpoint-sm: 40rem; /* 640px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 64rem; /* 1024px */
+  --breakpoint-xl: 80rem; /* 1280px */
+  --breakpoint-2xl: 96rem; /* 1536px */
+  --breakpoint-3xl: 120rem; /* 1920px */
+  --breakpoint-4xl: 160rem; /* 2560px */
+
+  /*  BORDER RADIUS  */
+  --radius-xs: 0.313rem; /* 5px */
+  --radius-sm: 0.625rem; /* 10px */
+  --radius-md: 0.938rem; /* 15px */
+  --radius-lg: 1.25rem; /* 20px */
+  --radius-xl: 2.5rem; /* 40px */
+
+  /*  SHADOWS  */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+
+  /*  DROP SHADOWS  */
+  --drop-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.15);
+  --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 0.12);
+  --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
+
+  /*  EASING FUNCTIONS FOR ANIMATIONS OR TRANSITION */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
