@@ -49,5 +49,5 @@ Screenshots will be added soon.
 
 ## 📫 Let’s Connect
 
-- 💼 **LinkedIn:**samaneh-amanollahi  
+- 💼 **LinkedIn:** samaneh-amanollahi  
 - ✉️ **Email:** sam1380aneh@gmail.com
