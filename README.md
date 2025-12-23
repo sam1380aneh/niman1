@@ -44,3 +44,9 @@ Screenshots will be added soon.
  - samane amanollahi, front-end developer
  - ali amanollahi, ui-ux designer
  - 2025/Nov/22
+   
+---
+
+📫 Let's Connect
+LinkedIn: linkedin.com/in/samaneh=amanollahi
+Email: sam1380aneh@gmail.com
