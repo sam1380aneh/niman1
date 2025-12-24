@@ -51,10 +51,10 @@
 
   /* nav */
   .div-nav {
-    @apply z-10 absolute top-0 w-full px-30 py-10 flex items-center justify-between;
+    @apply z-10 absolute top-0 w-full flex items-center justify-between mx-30;
   }
   .navbar {
-    @apply ml-250 w-3xl h-20 p-5 mr-10;
+    @apply w-3xl h-20 p-5;
   }
   .nav {
     @apply flex justify-between items-center flex-row-reverse gap-10;
@@ -248,7 +248,7 @@
   }
 
   li {
-    font-size: var(--text-md);
+    font-size: 1.5rem;
     padding: 5px;
     color: var(--color-text-white);
     font-family: sans-serif, "IRANYekanX";
