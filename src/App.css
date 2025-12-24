@@ -1,14 +1,6 @@
 @import "tailwindcss";
 @import "./base.css";
-
-/* font */
-@font-face {
-  font-family: "IRANSans";
-  src: url("/src/assets/font/Iranian.Sans.ttf_p30download.com/Fonts/irsans_p30download.com.ttf")
-    format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
+@import "./assets/css/font.css";
 
 /* componenet */
 
@@ -164,15 +156,18 @@
 
   /* footer */
   .download-sec {
-    @apply bg-primary flex flex-row-reverse justify-center items-center gap-10 rounded-lg mx-10;
+    @apply bg-primary rounded-lg mx-20 py-6 shadow;
   }
+}
+
+.vasat-chin {
+  @apply left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2;
 }
 
 /* base */
 @layer base {
   header {
     width: 100%;
-    height: 70rem;
     position: relative;
   }
   body {
@@ -180,14 +175,13 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-display: swap;
   }
   h1 {
     color: var(--color-text-white);
-    font-size: 70px;
-    font-weight: bold;
-    font-display: swap;
-    font-family: sans-serif, "IRANSans";
-    text-align: justify;
+    font-weight: 700;
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    font-family: sans-serif, "IRANYekanX";
     text-justify: inter-word;
     line-height: 1.5;
     direction: rtl;
@@ -196,8 +190,7 @@
     color: var(--color-text-orange);
     font-size: 50px;
     font-weight: bold;
-    font-display: swap;
-    font-family: sans-serif, "IRANSans";
+    font-family: sans-serif, "IRANYekanX";
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.5;
@@ -207,8 +200,7 @@
     color: var(--color-text-orange);
     font-size: 40px;
     font-weight: bold;
-    font-display: swap;
-    font-family: sans-serif, "IRANSans";
+    font-family: sans-serif, "IRANYekanX";
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.5;
@@ -218,8 +210,7 @@
     color: var(--color-text-color);
     font-size: 30px;
     font-weight: bold;
-    font-display: swap;
-    font-family: sans-serif, "IRANSans";
+    font-family: sans-serif, "IRANYekanX";
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.5;
@@ -228,8 +219,7 @@
   h5 {
     color: var(--color-text-color);
     font-size: 25px;
-    font-display: swap;
-    font-family: sans-serif, "IRANSans";
+    font-family: sans-serif, "IRANYekanX";
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.5;
@@ -240,8 +230,7 @@
     color: var(--color-text-color);
     font-size: 20px;
     font-weight: 100;
-    font-display: swap;
-    font-family: sans-serif, "IRANSans";
+    font-family: sans-serif, "IRANYekanX";
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.25;
@@ -251,8 +240,7 @@
     color: var(--color-text-white);
     font-size: 20px;
     font-weight: 100;
-    font-display: swap;
-    font-family: sans-serif, "IRANSans";
+    font-family: sans-serif, "IRANYekanX";
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.3;
@@ -263,6 +251,12 @@
     font-size: var(--text-md);
     padding: 5px;
     color: var(--color-text-white);
-    font-family: sans-serif, "IRANSans";
+    font-family: sans-serif, "IRANYekanX";
+  }
+
+  .fa-number {
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
   }
 }

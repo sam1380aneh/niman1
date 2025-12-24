@@ -1,14 +1,5 @@
 @import "tailwindcss";
 
-/* font */
-@font-face {
-  font-family: "IRANSans";
-  src: url("/src/assets/font/Iranian.Sans.ttf_p30download.com/Fonts/irsans_p30download.com.ttf")
-    format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-
 /* theme */
 @theme {
   /* bg color */

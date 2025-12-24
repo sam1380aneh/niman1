@@ -8,14 +8,7 @@
   <body>
     <header>
       <!-- header pic and shadow -->
-      <div>
-        <img
-          src="src/assets/img/imgs/main.jpg"
-          alt="main niman"
-          class="same-h-w relative"
-        />
-        <span class="same-h-w absolute bg-black/50"></span>
-      </div>
+
       <!-- navbar  -->
       <div class="div-nav">
         <!-- log-sign btn -->
@@ -49,19 +42,33 @@
         <!-- logo img -->
         <img src="src/assets/img/imgs/logo.png" alt="logo" class="w-30 h-30" />
       </div>
-      <!-- header text & main -->
-      <div class="text-container">
-        <h1 class="text-center">
+    </header>
+    <main class="border border-black">
+      <section class="hero-section relative h-screen bg-red-400 w-screen">
+        <span class="same-h-w absolute bg-black/50 inset-0 z-1"></span>
+        <!-- header text & main -->
+        <h1
+          class="text-center absolute left-1/2 -translate-x-1/2 top-80 z-2 w-full"
+        >
           اجاره ویلا و اقامتگاه در سراسر ایران <br />
           بهترین ویلاهای ساحلی، جنگلی و لوکس را با قیمت مناسب
         </h1>
+
         <button class="btn">
           <a>مشاهده ویلاها</a>
-          <img src="src/assets/img/svg/Vector.svg" alt="" />
+          <img src="src/assets/img/svg/Vector.svg" />
         </button>
-      </div>
-      <!-- serach box -->
-      <div class="search-box absolute bottom-2 left-50">
+
+        <img
+          src="src/assets/img/imgs/main.jpg"
+          alt="main niman"
+          class="absolute inset-0 h-full w-full z-0"
+        />
+      </section>
+      <section
+        class="-mt-16 px-10 py-5 bg-bg-color w-fit mx-auto relative z-10 rounded-lg border border-primary"
+      >
+        <!-- serach box -->
         <ul class="searchBar-nav">
           <li class="searchBar-nav-item">
             <h5 href="#" class="text-text-color">مقصد</h5>
@@ -84,9 +91,8 @@
             </button>
           </li>
         </ul>
-      </div>
-    </header>
-    <main>
+      </section>
+      <div class="container"></div>
       <div class="Separator"></div>
       <!-- cartbox-1 -->
       <div>
@@ -99,7 +105,7 @@
             </p>
             <button class="btn">
               <a href="#">مشاهده ویلاها</a>
-              <img src="src/assets/img/svg/Vector.svg" alt="" />
+              <img src="src/assets/img/svg/Vector.svg" />
             </button>
           </div>
           <div class="cart-slide">
@@ -813,7 +819,6 @@
         >
           <img
             src="src/assets/img/imgs/cdb3acf9fc704ce3645f9db1a1ba89f677c3e1d7.jpg"
-            alt=""
             class="w-350 h-175 rounded-md"
           />
         </div>
@@ -848,11 +853,11 @@
             <div class="flex flex-row-reverse items-center gap-5 m-5">
               <img src="public/image copy 10.png" class="w-[74px] h-[65px]" />
               <p>علی امان الهی</p>
-              <img src="src/assets/img/Vector 14.png" alt="" />
+              <img src="src/assets/img/Vector 14.png"  />
 
             </div>
             <div class="flex flex-row justify-end">
-            <img src="src/assets/img/stars.png" alt="">
+            <img src="src/assets/img/stars.png" >
             </div>
             <p >
               «به خاطر سفر کاری دنبال جای تمیز و قیمت مناسب بودم. خیلی سریع پیدا
@@ -1041,101 +1046,21 @@
       <div class="Separator"></div>
 
       <!-- footer -->
-      <div class="w-full rounded-3xl">
-        <div class="bg-secondary px-10 mx-20 mb-10 shadow rounded-lg">
-          <!-- social media -->
-          <div
-            class="bg-primary left-20 top-0 w-3xl rounded-3xl flex flex-row-reverse p-10 justify-center items-center"
-          >
-            <p class="text-bg-color">
-              همراه سفرهای نیمان در شبکه‌های اجتماعی باشید .
-            </p>
-            <div class="flex flex-row-reverse gap-3 pr-5">
+      <section>
+        <div>
+          <span>
+            <h5>همراه سفرهای نیمان در شبکه‌های اجتماعی باشید .</h5>
+            <span>
               <img
                 src="src/assets/img/svg/X_(formerly_Twitter)_logo_late_2025.svg 1.svg"
-                alt=""
               />
-              <img src="src/assets/img/svg/skill-icons_instagram.svg" alt="" />
-              <img src="src/assets/img/svg/logos_telegram.svg" alt="" />
-            </div>
-          </div>
-          <div class="flex flex-col items-end justify-start pr-40">
-            <img src="src/assets/img/imgs/niman-bl.png" class="w-30 h-30" />
-            <p class="w-110">
-              در نیمان تلاش می‌کنیم بهترین اقامتگاه‌ها در سراسر ایران—from
-              ویلاهای ساحلی شمال تا بوم‌گردی‌های گرم جنوب—را با دقت بررسی،
-              انتخاب و در اختیار شما قرار دهیم. هر اقامتگاه قبل از نمایش در
-              سایت، از نظر استانداردهای نظافتی، کیفیت امکانات، موقعیت و رضایت
-              کاربران ارزیابی می‌شود تا شما با خیال راحت، اقامت دلخواه‌تان را
-              رزرو کنید.
-            </p>
-          </div>
-          <!-- footer list -->
-          <div
-            class="flex font-sans flex-row gap-15 text-right w-7xl px-30 container mx-auto absolute top-60 left-70"
-          >
-            <ul
-              class="[&>li>a]:text-text-color [&>li>a]:text-[23px] [&>li>a]:font-light"
-            >
-              <li class="font-bold pb-5">
-                <a href="">نحوه رزرو اقامتگاه</a>
-              </li>
-              <li>
-                <a href="">راهنمای رزرو اقامتگاه</a>
-              </li>
-              <li>
-                <a href="">شیوه‌های پرداخت</a>
-              </li>
-              <li>
-                <a href="">لغو رزرو</a>
-              </li>
-            </ul>
-
-            <ul class="text-2xl [&>li>a]:text-text-color [&>li>a]:font-light">
-              <li class="font-bold pb-5">
-                <a href="">خدمات مشتریان</a>
-              </li>
-              <li>
-                <a href="">پرسش‌های متداول</a>
-              </li>
-              <li>
-                <a href="">چطور اقامتگاه ثبت کنم؟</a>
-              </li>
-              <li>
-                <a href="">حریم شخصی کاربران</a>
-              </li>
-            </ul>
-
-            <ul class="text-2xl [&>li>a]:text-text-color [&>li>a]:font-light">
-              <li class="font-bold pb-5">
-                <a href="">اطلاعات</a>
-              </li>
-              <li>
-                <a href="">درباره نیمان</a>
-              </li>
-              <li>
-                <a href="">تماس با ما</a>
-              </li>
-              <li>
-                <a href="">فرصت‌های شغلی</a>
-              </li>
-            </ul>
-          </div>
-          <!-- download -->
-          <div class="download-sec">
-            <h3 class="text-right pl-70">نیمان دانلود اپلیکیشن</h3>
-            <img src="src/assets/img/imgs/mayket.png" />
-            <img src="src/assets/img/imgs/bazar-logo.png" />
-          </div>
-          <div
-            name="namad-etemad"
-            class="flex flex-row justify-center p-10 gap-5"
-          >
-            <img src="src/assets/img/imgs/samandehi.png" class="w-35 h-35" />
-            <img src="src/assets/img/imgs/enamad.png" class="w-35 h-35" />
-          </div>
+              <img src="src/assets/img/svg/skill-icons_instagram.svg" />
+              <img src="src/assets/img/svg/logos_telegram.svg" />
+            </span>
+          </span>
+          <div></div>
         </div>
-      </div>
+      </section>
       <!-- end of footer -->
     </main>
     <script type="module" src="/src/main.jsx"></script>
