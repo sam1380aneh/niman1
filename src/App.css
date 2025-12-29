@@ -23,11 +23,10 @@
   /* btn */
   .btn {
     text-align: center;
-    font-size: var(--text-lg);
-    font-weight: bold;
-    width: auto;
-    height: auto;
-    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 5px;
     background-color: var(--color-primary);
     display: flex;
@@ -48,13 +47,9 @@
   .same-h-w {
     @apply top-0 w-full h-260 z-0 object-cover;
   }
-
   /* nav */
   .div-nav {
     @apply z-10 absolute top-0 w-full flex items-center justify-between mx-30;
-  }
-  .navbar {
-    @apply w-3xl h-20 p-5;
   }
   .nav {
     @apply flex justify-between items-center flex-row-reverse gap-10;
@@ -80,13 +75,10 @@
   }
   /* end of search box */
   .Separator {
-    @apply w-full h-60 bg-bg-color;
+    @apply w-full h-50 bg-bg-color;
   }
 
   /* cartbox-1 */
-  .cartbox-1 {
-    @apply bg-secondary py-30 rounded-lg shadow flex flex-row-reverse gap-10 justify-center h-auto mx-30;
-  }
   .cartext {
     @apply flex flex-col justify-end items-end gap-5;
   }
@@ -171,6 +163,7 @@
     position: relative;
   }
   body {
+    width: 100%;
     color: var(--color-text-color);
     box-sizing: border-box;
     padding: 0;
@@ -238,8 +231,8 @@
   }
   a {
     color: var(--color-text-white);
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 15px;
+    font-weight: bold;
     font-family: sans-serif, "IRANYekanX";
     text-align: justify;
     text-justify: inter-word;
@@ -248,7 +241,7 @@
   }
 
   li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 5px;
     color: var(--color-text-white);
     font-family: sans-serif, "IRANYekanX";
