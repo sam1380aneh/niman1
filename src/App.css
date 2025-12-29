@@ -98,7 +98,7 @@
     @apply flex flex-row-reverse justify-between items-center px-30 w-full pb-15;
   }
   .swiper-css {
-    @apply overflow-x-auto snap-x snap-mandatory w-550 h-150 mx-30  bg-secondary;
+    @apply overflow-x-auto snap-x snap-mandatory w-full h-150 mx-30 overflow-hidden  bg-secondary;
   }
   .track {
     @apply grid grid-flow-col auto-cols-[25%] gap-px;
