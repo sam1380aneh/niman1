@@ -68,7 +68,7 @@
     @apply flex py-20 shadow bg-bg-color h-30 justify-center container mx-auto items-center border-3 border-primary rounded-lg flex-row;
   }
   .searchBar-nav {
-    @apply flex w-375 justify-between items-center flex-row-reverse gap-30;
+    @apply flex w-full justify-between items-center flex-row-reverse gap-5 px-20;
   }
   .searchBar-nav-item {
     @apply flex flex-row justify-center items-center gap-5;
@@ -80,13 +80,13 @@
 
   /* cartbox-1 */
   .cartext {
-    @apply flex flex-col justify-end items-end gap-5;
+    @apply flex flex-col gap-10 w-3xl p-15 justify-end items-end;
   }
   .cart-slide {
-    @apply flex justify-center w-7xl;
+    @apply flex justify-center;
   }
   .cart-slides {
-    @apply flex flex-row w-full justify-between items-center gap-10;
+    @apply flex flex-row items-center gap-5 p-20;
   }
   .carts-slide1-item {
     @apply flex flex-col justify-center items-center;
@@ -95,16 +95,16 @@
 
   /* swiper */
   .container-text {
-    @apply flex flex-row-reverse justify-between items-center px-30 w-full pb-15;
+    @apply flex flex-row-reverse justify-between items-center pb-15 px-15;
   }
   .swiper-css {
-    @apply overflow-x-auto snap-x snap-mandatory w-full h-150 mx-30 overflow-hidden  bg-secondary;
+    @apply overflow-x-auto w-[90rem] snap-x snap-mandatory h-auto overflow-hidden bg-secondary mx-auto;
   }
   .track {
-    @apply grid grid-flow-col auto-cols-[25%] gap-px;
+    @apply grid grid-flow-col auto-cols-[25%] gap-4;
   }
   .slide {
-    @apply snap-start h-130 w-130 bg-white rounded-sm p-1.25 my-7.5  mx-5 shadow-xl;
+    @apply snap-start bg-white rounded-sm shadow ml-2 w-full overflow-hidden;
   }
   .pic-swiper-1 {
     @apply w-full h-65 object-cover rounded-sm p-2;
@@ -119,19 +119,19 @@
 
   /* about niman */
   .about-container {
-    @apply flex flex-row-reverse  justify-between relative;
+    @apply relative flex flex-row-reverse px-10 py-30 gap-5;
   }
   .text-decor {
-    @apply bg-primary p-13 rounded-lg w-137.5;
+    @apply bg-primary p-8 rounded-lg w-auto;
   }
   .text-decor-2 {
-    @apply bg-white/50 shadow p-7 backdrop-blur-lg flex flex-row-reverse gap-5 justify-center items-center rounded-lg w-175 absolute top-128 right-20 z-20;
+    @apply bg-white/50 shadow px-30 py-5 backdrop-blur-lg flex flex-row-reverse gap-5 justify-center items-center rounded-lg absolute top-128 mt-10 z-20;
   }
-  .price-pics {
-    @apply flex flex-row justify-between px-10 py-5 relative h-250;
-  }
+  /* .price-pics {
+    @apply relative;
+  } */
   .carts-dec-2 {
-    @apply w-full h-full text-right border-2 border-primary rounded-md;
+    @apply text-right border-primary rounded-md;
   }
   /* end of about niman */
 
@@ -211,7 +211,7 @@
   }
   h5 {
     color: var(--color-text-color);
-    font-size: 25px;
+    font-size: 20px;
     font-family: sans-serif, "IRANYekanX";
     text-align: justify;
     text-justify: inter-word;
@@ -221,10 +221,10 @@
   }
   p {
     color: var(--color-text-color);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
     font-family: sans-serif, "IRANYekanX";
-    text-align: justify;
+    /* text-align: justify; */
     text-justify: inter-word;
     line-height: 1.25;
     direction: rtl;
